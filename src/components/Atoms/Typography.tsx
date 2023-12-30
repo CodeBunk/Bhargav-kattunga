@@ -19,13 +19,13 @@ const Typography = (props: {
       break;
     case "Heading":
       return (
-        <span
-          className={`  font-normal md:text-2xl text-base font-poppins ${
+        <div
+          className={`font-normal md:text-2xl text-base font-poppins ${
             props?.className ? props?.className : " "
           }`}
         >
           {props.children}
-        </span>
+        </div>
       );
       break;
     case "details":

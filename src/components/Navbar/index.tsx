@@ -6,7 +6,7 @@ import { useNavigate } from "react-router";
 const Navbar = () => {
   const location = useNavigate();
   return (
-    <div className="bg-slate-950 flex justify-between text-white items-center px-20 py-6 ">
+    <div className="w-screen backdrop-blur-lg bg-black bg-opacity-40 flex justify-between text-white items-center px-20 py-6  fixed top-0 left-0 z-10">
       <img
         src={LOGO}
         alt=""
@@ -15,7 +15,7 @@ const Navbar = () => {
       />
       <div className=" gap-10 flex  items-center transition-all duration-500 max-lg:hidden">
         <button className=" clear-start border-2 border-transparent   transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:border-white rounded-full py-2 px-3 ">
-          <p className="font-serif"> Resume </p>
+          <p className="font-poppins"> Resume </p>
         </button>
 
         <div className=" flex gap-4 items-center justify-center ">

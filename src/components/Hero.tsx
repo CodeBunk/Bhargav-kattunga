@@ -13,7 +13,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className=" max-md:text-center md:w-3/5 w-full text-left md:px-10 max-md:pt-10 h-full text-white flex flex-col md:gap-7 gap-2 font-sherif justify-center items-center cursor-wand ">
+      <div className=" max-md:text-center md:w-3/5 w-full text-left md:px-10 max-md:pt-10 h-full text-white flex flex-col md:gap-7 gap-2 font-sherif justify-center cursor-wand ">
         <Typography variant="regular">
           I love crafting products and building stories.
         </Typography>

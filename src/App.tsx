@@ -30,10 +30,10 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          <Route element={<BaseLayout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-          </Route>
+          {/* <Route element={<BaseLayout />}> */}
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          {/* </Route> */}
         </Routes>
       </BrowserRouter>
     </>
