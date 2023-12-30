@@ -2,44 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-family: "Times New Roman",Georgia,Serif;
 
-
-@font-face {
-  font-family: 'WhyteInktrap-Regular'; 
-  src: url('../src/assets/fonts/WhyteInktrap-Regular.ttf') format('truetype');
+#root {
+  background: #000;
 }
-@font-face {
-  font-family: 'WhyteInktrap-MediumItalic'; 
-  src: url('../src/assets/fonts/WhyteInktrap-MediumItalic.ttf') format('truetype');
+.herogreen {
+  background: radial-gradient(#73e0a9, #000000);
 }
-@font-face {
-  font-family: 'WhyteInktrap-Medium'; 
-  src: url('../src/assets/fonts/WhyteInktrap-Medium.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'WhyteInktrap-Bold'; 
-  src: url('../src/assets/fonts/WhyteInktrap-Bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'WhyteInktrap-Heavy'; 
-  src: url('../src/assets/fonts/WhyteInktrap-Heavy.ttf') format('truetype');
+.heroviolet {
+  background: radial-gradient(#5b68df, #000000);
 }
 
-* {
-  font-family: "WhyteInktrap-Regular"
+.hero {
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #000000 0%,
+    #097756 100%
+  );
 }
-
-.herogreen{ 
-  background: radial-gradient(#73E0A9, #000000);
-}
-.heroviolet{ 
-  background: radial-gradient(#5B68DF, #000000);
-}
-
-.hero{ 
-    background-image: radial-gradient(
-      farthest-corner at 40px 40px,
-      #000000 0%,
-      #097756 100%
-    );
-  }

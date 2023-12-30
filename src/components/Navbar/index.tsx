@@ -1,15 +1,28 @@
 import React from "react";
-import LOGO from "../../assets/.png";
+import LOGO from "/Bhargav.svg";
+import Icons from "../Icons";
+import { useNavigate } from "react-router";
+
 const Navbar = () => {
+  const location = useNavigate();
   return (
-    <div className="bg-black flex justify-between text-white items-center px-20 ">
-      {/* <img src={LOGO} alt="" /> */}
+    <div className="bg-slate-950 flex justify-between text-white items-center px-20 py-6 ">
+      <img
+        src={LOGO}
+        alt=""
+        className="h-16 hover:scale-105  transition-all duration-300 cursor-pointer "
+        onClick={() => location("/")}
+      />
       <div className=" gap-10 flex  items-center transition-all duration-500 max-lg:hidden">
-        <button className=" border-2 border-transparent  transition-all duration-300 hover:bg-white hover:text-black hover:border-white rounded-xl p-3 "> Product</button>
-        <button className=" border-2 border-transparent  transition-all duration-300 hover:bg-white hover:text-black hover:border-white rounded-xl p-3 "> Benefits</button>
-        <button className=" border-2 border-transparent  transition-all duration-300 hover:bg-white hover:text-black hover:border-white rounded-xl p-3 "> Features</button>
-        <button className=" border-2 border-transparent  transition-all duration-300 hover:bg-white hover:text-black hover:border-white rounded-xl p-3 "> Use Cases </button>
-        <button className=" w-24 border-2  border-white rounded-xl p-3 hover:bg-white hover:font-semibold hover:text-black hover:translate-y-6 transition-all ease-linear"> Try Now</button>
+        <button className=" clear-start border-2 border-transparent   transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:border-white rounded-full py-2 px-3 ">
+          <p className="font-serif"> Resume </p>
+        </button>
+
+        <div className=" flex gap-4 items-center justify-center ">
+          <Icons variant="Youtube" Link="https://www.youtube.com" />
+          <Icons variant="Twitter" Link="https://www.twitter.com" />
+          <Icons variant="LinkedIn" Link="https://www.linkedin.com" />
+        </div>
       </div>
     </div>
   );

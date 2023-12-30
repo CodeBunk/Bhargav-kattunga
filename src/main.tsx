@@ -31,19 +31,12 @@ const errorLink = onError(({ graphQLErrors }) => {
     });
   }
 });
-export const client = new ApolloClient({
-  // link: concat(authMiddleware, ApolloLink.from([errorLink, httpLink])),
-  link: ApolloLink.from([errorLink, httpLink]),
-  cache: new InMemoryCache(),
-});
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <Provider store={store}>
     <PersistGate persistor={persistor}>
       <Toaster position="bottom-center" gutter={56} />
-      <ApolloProvider client={client}>
-        <App />
-      </ApolloProvider>
+      <App />
     </PersistGate>
   </Provider>
 );
