@@ -41,7 +41,7 @@ const Projects = () => {
                 key={index}
                 className="flex h-56 justify-center cursor-pointer flex-col w-full max-md:w-full align-center  border p-2 px-4 rounded-3xl border-white hover:shadow-xl border-opacity-60 hover:border-opacity-100 transition-all duration-300 hover:scale-[102%]"
               >
-                <div className="text-white    tracking-wide text-center text-3xl font-times  ">
+                <div className="text-white tracking-wide text-center text-3xl font-poppins  ">
                   {article.Title}
                 </div>
               </a>
