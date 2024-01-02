@@ -14,14 +14,14 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="w-screen backdrop-blur-lg bg-black bg-opacity-40 flex justify-between text-white items-center md:px-20 px-4 py-5 fixed top-0 left-0 z-10">
+    <div className="w-screen backdrop-blur-lg bg-black bg-opacity-40 flex justify-between text-white items-center md:px-12 px-4 py-5 fixed top-0 left-0 z-10">
       <img
         src={LOGO}
         alt=""
         className="md:h-16 h-10 hover:scale-105  transition-all duration-300 cursor-pointer "
         onClick={() => location("/")}
       />
-      <div className=" md:gap-10 gap-2 flex  items-center transition-all duration-500 ">
+      <div className=" md:gap-6 gap-2 flex items-center transition-all duration-500 ">
         {NavbarData.map((props: any) => (
           <button
             onClick={() => location(props.URL)}
