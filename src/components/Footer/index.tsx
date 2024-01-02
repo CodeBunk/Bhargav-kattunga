@@ -13,17 +13,12 @@ const Footer = () => {
           <div className=" font-semibold font-poppins opacity-70 leading-loose text-xl hover:opacity-100 hover:cursor-pointer hover:scale-105 transition-all duration-400 ease-in ">
             Bhargav Ram Kattunga
           </div>
-          {/* <div className=" flex md:gap-4 gap-2 items-center justify-center  ">
+          <div className=" flex md:gap-4 gap-2 items-center justify-center  ">
             <Icons
-              variant="Dribble"
-              Link="https://dribbble.com/KattungaBhargav"
+              variant="Behance"
+              Link="https://www.behance.net/bhargavkattung"
             />
-            <Icons
-              variant="LinkedIn"
-              Link="https://linkedin.com/in/bhargav-sai-ram-kattunga-047365236"
-            />
-            <Icons variant="Email" Link="mailto:bhargav.kattunga@gmail.com" />
-          </div> */}
+          </div>
         </div>
       </div>
     </>
