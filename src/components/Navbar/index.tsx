@@ -19,7 +19,14 @@ const Navbar = () => {
         src={LOGO}
         alt=""
         className="md:h-16 h-10 hover:scale-105  transition-all duration-300 cursor-pointer "
-        onClick={() => location("/")}
+        onClick={() => (
+          location("/"),
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          })
+        )}
       />
       <div className=" md:gap-6 gap-2 flex items-center transition-all duration-500 ">
         {NavbarData.map((props: any) => (
