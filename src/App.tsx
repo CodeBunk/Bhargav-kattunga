@@ -12,6 +12,7 @@ import {
 import Home from "./Pages/Home";
 import BaseLayout from "./components/Layouts/BaseLayout";
 import Projects from "./Pages/Projects";
+import PdfViewer from "./Pages/PdfViewer";
 
 function App() {
   function ScrollToTop() {
@@ -33,6 +34,7 @@ function App() {
           {/* <Route element={<BaseLayout />}> */}
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<PdfViewer />} />
           {/* </Route> */}
         </Routes>
       </BrowserRouter>

@@ -17,7 +17,9 @@ module.exports = {
       },
       colors: {
         "black-3": "#14171F",
-        blue: "#858EAD",
+        "green-1": "#00F135",
+        "blue-1": "#DE00F1",
+        "yellow-1": "#FFE500",
         out: "#E0E3EB",
         sky: "#2947A9",
         white: "#FFFFFF",
