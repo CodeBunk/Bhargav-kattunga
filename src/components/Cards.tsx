@@ -28,8 +28,10 @@ const Cards = () => {
     },
   ];
   return (
-    <div className=" w-full lg:px-20 px-4 text-white flex flex-col gap-10 ">
-      <div className=" text-5xl font-times">Featured Projects</div>
+    <div className=" w-full lg:px-20 px-4 text-white flex flex-col gap-10 max-md:pt-10 ">
+      <div className=" lg:text-5xl text-3xl font-times max-md:text-center">
+        Featured Projects
+      </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 ">
         {Data.map((props: any) => (
           <a
