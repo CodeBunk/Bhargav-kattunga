@@ -5,7 +5,7 @@ const CTA = () => {
   const location = useNavigate();
 
   return (
-    <div className=" w-full lg:px-20 px-4 text-white md:pt-20 pt-10 ">
+    <div className=" w-full lg:px-20 px-4 text-white md:pt-20 py-10 ">
       <div className="grid  gap-10 ">
         {/* {Data.map((props: any) => ( */}
         <a

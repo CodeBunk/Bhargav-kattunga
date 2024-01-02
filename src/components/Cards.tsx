@@ -20,11 +20,11 @@ const Cards = () => {
         "building a brand narrative that resonates with its audience while maintaining aesthetic consistency and brand integrity.",
     },
     {
-      src: "/.png",
+      src: "/travia.png",
       url: "https://www.behance.net/gallery/159697011/TRAVIA-A-Travel-Application-Case-Study",
       title: "Travia",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iusto esse doloremque eius et corporis consequuntur optio, explicabo sapiente, dicta veritatis quibusdam? Expedita tempora, numquam qui quod voluptas maiores a quia laborum commodi necessitatibus blanditiis distinctio assumenda et similique fugit rem veritatis consequatur pariatur cumque. Earum expedita nesciunt obcaecati consectetur!",
+        "A travel community application made to plan all the travel activities at a place.",
     },
   ];
   return (
@@ -35,12 +35,12 @@ const Cards = () => {
           <a
             className="flex flex-col gap-2 hover:scale-[103%] transition-all duration-300 cursor-pointer  "
             target="_blank"
-            href="https://www.behance.net/gallery/156976797/KingzQueenZ-Rummy"
+            href={props.url}
           >
             <img
               src={props.src}
               alt=""
-              className=" aspect-video rounded-3xl "
+              className=" w-full object-cover aspect-video rounded-3xl "
             />
             <div className="text-white font-times text-3xl font-normal ">
               {props.title}
@@ -49,10 +49,15 @@ const Cards = () => {
           </a>
         ))}
         <div
-          className="flex flex-col gap-2 hover:scale-[103%] transition-all duration-300 cursor-pointer  "
+          className="flex flex-col gap-2  transition-all duration-300 cursor-pointer   "
           onClick={() => location("/projects")}
         >
-          <img src="/More.png" alt="" className=" aspect-video rounded-3xl " />
+          <div className=" aspect-video hover:scale-[103%] transition-all duration-300 rounded-3xl bg-[#0027F1] flex text-center items-center">
+            <p className="w-full font-times text-3xl">
+              {" "}
+              Don’t we designer want to show more?
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -14,13 +14,13 @@ const Projects = () => {
       Title: "Wishtronics",
     },
     {
+      Title: "DIGITAL MARKETING COLLABS",
+    },
+    {
       Title: "TRAVANA",
     },
     {
       Title: "TECHNOVATION",
-    },
-    {
-      Title: "AI search startup Subtl.ai raises $1,00,000 in angel funding",
     },
   ];
   return (
