@@ -14,13 +14,13 @@ const Projects = () => {
       Title: "Wishtronics",
     },
     {
-      Title: "DIGITAL MARKETING COLLABS",
+      Title: "Digital Marketing Collabs",
     },
     {
-      Title: "TRAVANA",
+      Title: "Travana",
     },
     {
-      Title: "TECHNOVATION",
+      Title: "Technovation",
     },
   ];
   return (

@@ -28,11 +28,11 @@ const Cards = () => {
     },
   ];
   return (
-    <div className=" w-full lg:px-20 px-4 text-white flex flex-col gap-10 max-md:pt-10 ">
+    <div className=" w-full lg:px-20 px-4 text-white flex flex-col gap-10 max-md:pt-20 ">
       <div className=" lg:text-5xl text-3xl font-times max-md:text-center">
         Featured Projects
       </div>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 ">
+      <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-12 ">
         {Data.map((props: any) => (
           <a
             className="flex flex-col gap-4 hover:scale-[103%] transition-all duration-300 cursor-pointer  "
@@ -55,15 +55,15 @@ const Cards = () => {
           onClick={() => location("/projects")}
         >
           <div className=" aspect-video hover:scale-[103%] transition-all duration-300 rounded-3xl bg-[#0027F1] flex text-center items-center">
-            <p className="w-full font-times text-3xl text-white">
+            <p className="w-full font-times text-3xl text-white px-4">
               {" "}
               Don’t we designer want to show more?
             </p>
           </div>
-          <div className="text-inherit font-times text-3xl font-normal ">
+          <div className=" md:text-inherit text-white font-times text-3xl font-normal ">
             click to go to projects page
           </div>
-          <div className="text-inherit font-poppins">
+          <div className=" md:text-inherit text-white font-poppins">
             find the list of all the notable projects{" "}
           </div>
         </div>

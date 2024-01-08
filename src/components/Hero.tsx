@@ -4,7 +4,7 @@ import Typography from "./Atoms/Typography";
 
 const Hero = () => {
   return (
-    <div className=" md:h-[calc(100vh-112px)] w-full flex flex-col md:flex-row items-center justify-between md:pl-20 px-10 max-md:pt-24 align-center  ">
+    <div className=" md:h-[calc(100vh)] pt-[112px]  w-full flex flex-col md:flex-row items-center justify-between md:pl-20 px-10  align-center  ">
       <div className=" h-full md:w-2/5 w-full object-contain flex items-center relative">
         <img
           src="/BhargavHero.png"

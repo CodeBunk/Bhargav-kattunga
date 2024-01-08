@@ -39,10 +39,6 @@ const Navbar = () => {
         ))}
         <div className=" flex md:gap-4 gap-2 items-center justify-center  ">
           <Icons
-            variant="Dribble"
-            Link="https://dribbble.com/KattungaBhargav"
-          />
-          <Icons
             variant="LinkedIn"
             Link="https://linkedin.com/in/bhargav-sai-ram-kattunga-047365236"
           />

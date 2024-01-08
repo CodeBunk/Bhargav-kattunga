@@ -20,7 +20,7 @@ const Typography = (props: {
     case "Heading":
       return (
         <div
-          className={`font-normal md:text-2xl text-base font-poppins ${
+          className={`font-normal lg:text-2xl md:text-lg text-base  font-poppins ${
             props?.className ? props?.className : " "
           }`}
         >
