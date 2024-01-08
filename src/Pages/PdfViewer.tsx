@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 const PdfViewer = () => {
   return (
-    <div className=" h-screen w-screen flex items-center justify-center bg-black">
+    <div className="h-screen w-screen flex items-center justify-center bg-black">
       <Navbar />
       <embed
         src="/BhargavResume.pdf"

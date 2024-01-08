@@ -9,7 +9,7 @@ const Navbar = () => {
   const NavbarData = [
     { name: "Resume", URL: "/resume" },
     {
-      name: "Projects",
+      name: "Archives",
       URL: "/projects",
     },
   ];
