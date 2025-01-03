@@ -13,14 +13,14 @@ const Cards = () => {
         "An online rummy game designed to increase the interaction and engagment with the players or friends group",
     },
     {
-      src: "/KingQueen.png",
+      src: "/Leafcraft.jpg",
       url: "/leafcraft",
       title: "Leafcraft",
       description:
-        "An online rummy game designed to increase the interaction and engagment with the players or friends group",
+        "A low code no code application equipped with E-commerce approach to deliver software applications with personalisation and scalability.",
     },
     {
-      src: "/KingQueen.png",
+      src: "/Wishtronics.jpg",
       url: "/wishtronics",
       title: "wishtronics",
       description:
@@ -57,7 +57,7 @@ const Cards = () => {
     },
     {
       src: "/travia.png",
-      url: "https://www.behance.net/gallery/159697011/TRAVIA-A-Travel-Application-Case-Study",
+      url: "/travia",
       title: "Travia",
       description:
         "A travel community application made to plan all the travel activities at a place.",

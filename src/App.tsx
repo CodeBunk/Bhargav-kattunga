@@ -14,6 +14,9 @@ import BaseLayout from "./components/Layouts/BaseLayout";
 import Projects from "./Pages/Projects";
 import PdfViewer from "./Pages/PdfViewer";
 import Leafcraft from "./Pages/Leafcraft";
+import Travia from "./Pages/Travia";
+import Navbar from "./components/Navbar";
+import KingsQueen from "./Pages/KingsQueen";
 
 function App() {
   function ScrollToTop() {
@@ -31,15 +34,16 @@ function App() {
     <>
       <BrowserRouter>
         <ScrollToTop />
+        <Navbar />
         <Routes>
-          {/* <Route element={<BaseLayout />}> */}
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<PdfViewer />} />
           <Route path="/leafcraft" element={<Leafcraft />} />
           <Route path="/wishtronics" element={<div />} />
-          <Route path="/collabs" element={<div />} />
+          <Route path="/kingzqueenz" element={<KingsQueen />} />
           <Route path="/travana" element={<div />} />
+          <Route path="/travia" element={<Travia />} />
           <Route path="/technovation" element={<div />} />
           {/* </Route> */}
         </Routes>
