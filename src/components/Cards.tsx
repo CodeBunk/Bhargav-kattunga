@@ -89,10 +89,10 @@ const Cards = () => {
       </div>
       <div className="grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-12 ">
         {Data.map((props: any) => (
-          <a
+          <div
             className="flex flex-col gap-4 hover:scale-[103%] transition-all duration-300 cursor-pointer  "
-            target="_blank"
-            href={props.url}
+            // target="_blank"
+            onClick={() => location(props.url)}
           >
             <img
               src={props.src}
@@ -103,7 +103,7 @@ const Cards = () => {
               {props.title}
             </div>
             <div className="text-white font-poppins">{props.description}</div>
-          </a>
+          </div>
         ))}
         {/* <div
           className="flex flex-col gap-4 hidden  text-black hover:text-white transition-all duration-300 cursor-pointer   "
