@@ -35,6 +35,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<PdfViewer />} />
+          <Route path="/leafcraft" element={<div />} />
+          <Route path="/wishtronics" element={<div />} />
+          <Route path="/collabs" element={<div />} />
+          <Route path="/travana" element={<div />} />
+          <Route path="/technovation" element={<div />} />
           {/* </Route> */}
         </Routes>
       </BrowserRouter>
