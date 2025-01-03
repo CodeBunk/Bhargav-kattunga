@@ -11,23 +11,23 @@ const Projects = () => {
   const List = [
     {
       Title: "Leafcraft",
-      URI: 'leafcraft'
+      URI: "leafcraft",
     },
     {
       Title: "Wishtronics",
-      URI: 'wishtronics'
+      URI: "wishtronics",
     },
     {
       Title: "Digital Marketing Collabs",
-      URI: 'collabs'
+      URI: "collabs",
     },
     {
       Title: "Travana",
-      URI: 'travana'
+      URI: "travana",
     },
     {
       Title: "Technovation",
-      URI: 'technovation'
+      URI: "technovation",
     },
   ];
   return (

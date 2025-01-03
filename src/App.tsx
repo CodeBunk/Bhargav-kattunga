@@ -13,6 +13,7 @@ import Home from "./Pages/Home";
 import BaseLayout from "./components/Layouts/BaseLayout";
 import Projects from "./Pages/Projects";
 import PdfViewer from "./Pages/PdfViewer";
+import Leafcraft from "./Pages/Leafcraft";
 
 function App() {
   function ScrollToTop() {
@@ -35,7 +36,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<PdfViewer />} />
-          <Route path="/leafcraft" element={<div />} />
+          <Route path="/leafcraft" element={<Leafcraft />} />
           <Route path="/wishtronics" element={<div />} />
           <Route path="/collabs" element={<div />} />
           <Route path="/travana" element={<div />} />

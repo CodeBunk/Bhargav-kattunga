@@ -14,7 +14,7 @@ const Cards = () => {
     },
     {
       src: "/KingQueen.png",
-      url: "/leacraft",
+      url: "/leafcraft",
       title: "Leafcraft",
       description:
         "An online rummy game designed to increase the interaction and engagment with the players or friends group",
