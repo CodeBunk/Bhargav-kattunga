@@ -11,23 +11,23 @@ const Projects = () => {
   const List = [
     {
       Title: "Leafcraft",
-      URI: "leafcraft",
+      // URI: "leafcraft",
     },
     {
       Title: "Wishtronics",
-      URI: "wishtronics",
+      // URI: "wishtronics",
     },
     {
       Title: "Digital Marketing Collabs",
-      URI: "collabs",
+      // URI: "collabs",
     },
     {
       Title: "Travana",
-      URI: "travana",
+      // URI: "travana",
     },
     {
       Title: "Technovation",
-      URI: "technovation",
+      // URI: "technovation",
     },
   ];
   return (
@@ -52,7 +52,7 @@ const Projects = () => {
             {List.map((article, index) => (
               <div
                 key={index}
-                onClick={() => location(`/${article.URI}`)}
+                // onClick={() => location(`/${article?.URI}`)}
                 className="flex h-56 justify-center cursor-pointer flex-col w-full max-md:w-full align-center  border p-2 px-4 rounded-3xl border-white hover:shadow-xl border-opacity-60 hover:border-opacity-100 transition-all duration-300 hover:scale-[102%]"
               >
                 <div className="text-white tracking-wide text-center text-xl font-poppins  ">

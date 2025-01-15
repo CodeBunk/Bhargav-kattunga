@@ -48,13 +48,13 @@ const Cards = () => {
     //   description:
     //     "building a brand narrative that resonates with its audience while maintaining aesthetic consistency and brand integrity.",
     // },
-    {
-      src: "/KingQueen.png",
-      url: "https://www.behance.net/gallery/156976797/KingzQueenZ-Rummy",
-      title: "Travana",
-      description:
-        "An online rummy game designed to increase the interaction and engagment with the players or friends group",
-    },
+    // {
+    //   src: "/KingQueen.png",
+    //   url: "https://www.behance.net/gallery/156976797/KingzQueenZ-Rummy",
+    //   title: "Travana",
+    //   description:
+    //     "An online rummy game designed to increase the interaction and engagment with the players or friends group",
+    // },
     {
       src: "/travia.png",
       url: "/travia",
