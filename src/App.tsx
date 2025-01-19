@@ -17,6 +17,8 @@ import Leafcraft from "./Pages/Leafcraft";
 import Travia from "./Pages/Travia";
 import Navbar from "./components/Navbar";
 import KingsQueen from "./Pages/KingsQueen";
+import Wishtronics from "./Pages/Wishtronics";
+import OneImmersive from "./Pages/OneImmersive";
 
 function App() {
   function ScrollToTop() {
@@ -40,7 +42,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<PdfViewer />} />
           <Route path="/leafcraft" element={<Leafcraft />} />
-          <Route path="/wishtronics" element={<div />} />
+          <Route path="/wishtronics" element={<Wishtronics />} />
+          <Route path="/one-immersive" element={<OneImmersive />} />
           <Route path="/kingzqueenz" element={<KingsQueen />} />
           <Route path="/travana" element={<div />} />
           <Route path="/travia" element={<Travia />} />
