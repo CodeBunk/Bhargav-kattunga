@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-family: "Times New Roman",Georgia,Serif;
+@font-family: "Times New Roman", Georgia, Serif;
 
-#root {
-  background: #000;
+/* #root {
+ background: #; 
+
 }
-
+ */
 /* .herogreen {
   background: radial-gradient(#73e0a9, #000000);
 } */
