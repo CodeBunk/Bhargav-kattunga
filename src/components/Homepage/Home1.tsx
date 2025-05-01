@@ -46,7 +46,7 @@ const Home1 = () => {
 
             a fellow designer seems a bit generic huh?
           </div>
-          <div className=' flex items-center gap-1 pt-6 '>
+          <div className=' flex items-center flex-wrap gap-1 justify-center pt-6 '>
             I like
 
             <div className=' group relative '>
