@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Home1 = () => {
+const Home3 = () => {
   return (
     <div> <div>
       <svg width="180" height="357" viewBox="0 0 180 357" xmlns="http://www.w3.org/2000/svg">
@@ -49,4 +49,4 @@ const Home1 = () => {
   )
 }
 
-export default Home1
+export default Home3

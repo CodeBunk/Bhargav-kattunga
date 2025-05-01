@@ -8,9 +8,11 @@ import CTA from "../components/CTA";
 
 
 import Home1 from '../components/Homepage/Home1'
+import Home2 from "../components/Homepage/Home2";
+import Home3 from "../components/Homepage/Home3";
 const Home = () => {
 
-  const Data = [< Home1 />, < Home1 />, < Home1 />]
+  const Data = [< Home1 />, < Home2 />, < Home3 />]
   return (
     <div className=' w-full h-full '>
 
@@ -18,7 +20,7 @@ const Home = () => {
 
 
         <div key={index} className='    w-screen h-[300vh] bg-white   '>
-          <div className='  sticky top-0  w-screen h-screen bg-orange flex items-center justify-center  '>
+          <div className='  sticky top-0  w-screen h-screen  flex items-center justify-center  '>
 
             {data}
           </div>

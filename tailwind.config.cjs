@@ -7,6 +7,7 @@ module.exports = {
         Work: ["Work Sans", "sans-serif"],
         factum: ["Faktum Test", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        Beth: ["Beth Ellen", "sans-serif"],
         inter: ["Inter", "sans-serif"],
         WhyteRegular: ["WhyteInktrap-Regular", "sans-serif"],
         WhyteMedI: ["WhyteInktrap-MediumItalic", "sans-serif"],
@@ -18,7 +19,7 @@ module.exports = {
       colors: {
         "black-3": "#14171F",
         "green-1": "#00F135",
-        "blue-1": "#DE00F1",
+        "blue": " #005BAC",
         "yellow-1": "#FFE500",
         out: "#E0E3EB",
         sky: "#2947A9",
