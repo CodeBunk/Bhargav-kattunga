@@ -8,7 +8,8 @@ import Biketext from "../../../public/Hero/bike.png"
 import Animetext from "../../../public/Hero/anime.png"
 import Techtext from "../../../public/Hero/tech.png"
 import Phototext from "../../../public/Hero/photography.png"
-import sound from "../../../public/Hero/click.mp3"
+import sound1 from "../../../public/Hero/click.mp3"
+import sound from "../../../public/Hero/Sound.mp3"
 // import sound from "../../../public/Hero/buttonsound.mp3"
 const Home1 = () => {
   const audioRef = useRef(new Audio(sound));
@@ -58,7 +59,7 @@ const Home1 = () => {
               />
               <img
                 src={Animetext}
-                className=' absolute  group-hover:flex hidden object-contain -top-14 -left-[50%] h-16 transition-all duration-300'
+                className=' absolute   group-hover:flex hidden object-contain -top-14 -left-[50%] h-16 transition-all duration-300'
                 alt=""
               />
             </div>
@@ -70,7 +71,7 @@ const Home1 = () => {
                 className='select-none object-cover bg-center aspect-video rounded-full h-16' alt="" />
               <img
                 src={Phototext}
-                className=' absolute  group-hover:flex hidden  object- -top-16 left-[50%] h-full w-full  transition-all duration-300'
+                className=' absolute overflow-visible object-cover group-hover:flex hidden  object- -top-12 left-[70%] h-12 w-full  transition-all duration-300'
 
                 alt=""
               />
@@ -82,7 +83,7 @@ const Home1 = () => {
               <img src={Tech} onMouseEnter={playSound} className=' select-none bg-auto bg-center aspect-video rounded-full h-16' alt="" />
               <img
                 src={Techtext}
-                className=' absolute pb-2 group-hover:flex hidden object-contain -top-14 -left-[50%] h-16 transition-all duration-300'
+                className=' absolute pb-2  group-hover:flex hidden object-contain -top-14 -left-[50%] h-16 transition-all duration-300'
                 alt=""
               />
             </div>  and

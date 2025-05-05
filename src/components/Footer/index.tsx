@@ -5,7 +5,7 @@ import Icons from "../Icons";
 const Footer = () => {
   return (
     <>
-      <div className="bg-black grid gap-5 cursor-all-scroll  ">
+      {/* <div className="bg-black grid gap-5 cursor-all-scroll  ">
         <div className="text-white flex md:flex-row flex-col max-md:gap-4 justify-between w-full items-center p-5 px-10">
           <div className=" flex md:gap-10 gap-2 md:flex-row flex-col max-md:text-center ">
             <div className="font-serif">© 2023 All right reserved.</div>
@@ -24,6 +24,10 @@ const Footer = () => {
             />
           </div>
         </div>
+      </div> */}
+
+      <div className=" text-center py-4 border-t border-gray text-gray1  w-full  ">
+        Created with mix of passion & compulsion ❤️‍🔥🤕  |  © 2025 Bhargav Sai Ram Kattunga. All rights reserved.
       </div>
     </>
   );

@@ -9,9 +9,8 @@ const Typography = (props: {
     case "regular":
       return (
         <div
-          className={` font-normal lg:text-7xl text-3xl text-inherit font-times   ${
-            props?.className ? props?.className : ""
-          }`}
+          className={` font-normal lg:text-7xl text-3xl text-inherit font-times   ${props?.className ? props?.className : ""
+            }`}
         >
           {props.children}
         </div>
@@ -20,9 +19,8 @@ const Typography = (props: {
     case "Heading":
       return (
         <div
-          className={`font-normal lg:text-2xl md:text-lg text-base  font-poppins ${
-            props?.className ? props?.className : " "
-          }`}
+          className={`font-normal lg:text-2xl md:text-lg text-base  font-poppins ${props?.className ? props?.className : " "
+            }`}
         >
           {props.children}
         </div>
@@ -31,9 +29,8 @@ const Typography = (props: {
     case "details":
       return (
         <div
-          className={` font-normal text-lg font-inter ${
-            props?.className ? props?.className : ""
-          }`}
+          className={` font-normal text-lg font-inter ${props?.className ? props?.className : ""
+            }`}
         >
           {props.children}
         </div>
@@ -42,9 +39,8 @@ const Typography = (props: {
     case "card-title":
       return (
         <span
-          className={`font-inter font-semibold text-xl ${
-            props?.className ? props?.className : ""
-          }`}
+          className={`font-inter font-semibold text-xl ${props?.className ? props?.className : ""
+            }`}
         >
           {props.children}
         </span>
@@ -53,9 +49,8 @@ const Typography = (props: {
     case "form-upload":
       return (
         <span
-          className={`font-inter font-medium text-xl ${
-            props?.className ? props?.className : ""
-          }`}
+          className={`font-inter font-medium text-xl ${props?.className ? props?.className : ""
+            }`}
         >
           {props.children}
         </span>
@@ -64,9 +59,8 @@ const Typography = (props: {
     case "card-regular":
       return (
         <span
-          className={`font-medium text-xxs leading-5 ${
-            props?.className ? props?.className : ""
-          }`}
+          className={`font-medium text-xxs leading-5 ${props?.className ? props?.className : ""
+            }`}
         >
           {props.children}
         </span>
@@ -75,9 +69,8 @@ const Typography = (props: {
     case "sideHeadings":
       return (
         <span
-          className={`font-medium text-3xl leading-5 ${
-            props?.className ? props?.className : ""
-          }`}
+          className={`font-medium text-3xl leading-5 ${props?.className ? props?.className : ""
+            }`}
         >
           {props.children}
         </span>
@@ -86,9 +79,8 @@ const Typography = (props: {
     case "card-large":
       return (
         <span
-          className={`font-medium text-4xl leading-[50px] ${
-            props?.className ? props?.className : ""
-          }`}
+          className={`font-medium text-4xl leading-[50px] ${props?.className ? props?.className : ""
+            }`}
         >
           {props.children}
         </span>
@@ -97,9 +89,8 @@ const Typography = (props: {
     case "Bold":
       return (
         <span
-          className={` font-bold text-xl font-inter ${
-            props?.className ? props?.className : ""
-          }`}
+          className={` font-bold text-xl font-inter ${props?.className ? props?.className : ""
+            }`}
         >
           {props.children}
         </span>
@@ -108,9 +99,8 @@ const Typography = (props: {
     case "Button":
       return (
         <span
-          className={`font-medium text-xl font-inter ${
-            props?.className ? props?.className : ""
-          }`}
+          className={`font-medium text-xl font-inter ${props?.className ? props?.className : ""
+            }`}
         >
           {props.children}
         </span>

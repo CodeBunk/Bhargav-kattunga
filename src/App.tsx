@@ -37,20 +37,26 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Navbar />
+
         <Routes>
+
+
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<PdfViewer />} />
-          <Route path="/leafcraft" element={<Leafcraft />} />
-          <Route path="/wishtronics" element={<Wishtronics />} />
-          <Route path="/one-immersive" element={<OneImmersive />} />
-          <Route path="/kingzqueenz" element={<KingsQueen />} />
-          <Route path="/travana" element={<div />} />
-          <Route path="/travia" element={<Travia />} />
-          <Route path="/technovation" element={<div />} />
-          {/* </Route> */}
+          <Route element={<BaseLayout />} >
+            <Route path="/project" element={<Projects />} />
+            <Route path="/resume" element={<PdfViewer />} />
+            <Route path="/about" element={<Leafcraft />} />
+            <Route path="/project" element={<Wishtronics />} />
+            <Route path="/archives" element={<OneImmersive />} />
+            <Route path="/kingzqueenz" element={<KingsQueen />} />
+            <Route path="/travana" element={<div />} />
+            <Route path="/travia" element={<Travia />} />
+            <Route path="/technovation" element={<div />} />
+
+          </Route>
         </Routes>
-      </BrowserRouter>
+
+      </BrowserRouter >
     </>
   );
 }

@@ -6,7 +6,7 @@ import Resume from "../../public/Bhargav.pdf"
 const PdfViewer = () => {
   return (
     <div className="h-screen w-screen flex items-center justify-center bg-black">
-      <Navbar />
+      {/* <Navbar /> */}
       <embed
         src={Resume}
         width="100%"

@@ -18,6 +18,9 @@ module.exports = {
       },
       colors: {
         "black-3": "#14171F",
+        "gray": "#E2E8F0",
+        "gray1": "#8E8D94",
+        "muted": "#64748B",
         "green-1": "#00F135",
         "blue": " #005BAC",
         "yellow-1": "#FFE500",
@@ -33,7 +36,6 @@ module.exports = {
         orange: "#F9995D",
         red: "#ED6565",
         navcls: "#F5F5F5",
-        gray: "#525B7A",
         neutral: "#E0E3EB",
       },
       boxShadow: {
