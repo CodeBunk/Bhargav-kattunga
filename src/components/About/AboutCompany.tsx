@@ -21,9 +21,9 @@ import traviaLogo from "../../../public/About/Company/Other/travia.png"
 import pitchDeckLogo from "../../../public/About/Company/Other/pitchdeck.png"
 import uMediaLogo from "../../../public/About/Company/Other/Umedia.png"
 import resumeTemplateLogo from "../../../public/About/Company/Other/resume.png"
-
+//leadership
 import adpluriLogo from "../../../public/About/Company/Leadership/adplist.png"
-import nssLogo from "../../../public/About/Company/Leadership/nss.png"
+import nssLogo from "../../../public/About/Company/Leadership/Nss.png"
 import tinkeringLabsLogo from "../../../public/About/Company/Leadership/atal.png"
 import streetCauseLogo from "../../../public/About/Company/Leadership/steetcause.png"
 import technovationLogo from "../../../public/About/Company/Leadership/technovation.png"
