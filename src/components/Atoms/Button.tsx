@@ -68,6 +68,7 @@ const Button = ({
         <button
             type={type}
             onClick={onClick}
+
             disabled={disabled || loading}
             className={`${baseClasses}    whitespace-nowrap ${variantClasses[variant]} ${disabledClasses} ${widthClass} ${className}`}
         >

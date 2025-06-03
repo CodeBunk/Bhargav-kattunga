@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div className=' w-full h-full '>
       {Data?.map((data: any, index) => (
-        <div key={index} className='    w-screen h-[300vh] bg-white   '>
+        <div key={index} className='  sticky top-0    w-screen h-[300vh] bg-white   '>
           <div className='  sticky top-0  w-screen h-screen  flex items-center justify-center  '>
             {data}
           </div>
