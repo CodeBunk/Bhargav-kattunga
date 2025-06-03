@@ -19,7 +19,7 @@ import oneImmersiveLogo from "../../../public/About/Company/Other/oneimmersive.p
 import japanJournalLogo from "../../../public/About/Company/Other/japan.png"
 import traviaLogo from "../../../public/About/Company/Other/travia.png"
 import pitchDeckLogo from "../../../public/About/Company/Other/pitchdeck.png"
-import uMediaLogo from "../../../public/About/Company/Other/umedia.png"
+import uMediaLogo from "../../../public/About/Company/Other/Umedia.png"
 import resumeTemplateLogo from "../../../public/About/Company/Other/resume.png"
 
 import adpluriLogo from "../../../public/About/Company/Leadership/adplist.png"
