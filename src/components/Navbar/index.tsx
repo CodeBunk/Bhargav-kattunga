@@ -20,7 +20,21 @@ const Navbar = () => {
     { name: "Home", URL: "/" },
     { name: "About", URL: "/about" },
     {
-      name: "Projects", subcat: [{ name: "Curated", subtitle: "Man! It's really hard to show only a couple things as a designer", URL: "/curated", gif: archives }, { name: "Archives", subtitle: "All the things that I was forced to aside with time", URL: "/archives", gif: Curated }],
+      name: "Projects",
+      subcat: [
+        {
+          name: "Curated",
+          subtitle: "Man! It's really hard to show only a couple things as a designer",
+          URL: "/curated",
+          gif: Curated
+
+        }, {
+          name: "Archives",
+          subtitle: "All the things that I was forced to aside with time",
+          URL: "/archives",
+          gif: archives
+
+        }],
       subtitle: "My curated projects",
       gif: defaultGIF
     },
@@ -134,9 +148,9 @@ const Navbar = () => {
           />
           <Icons
             variant="Behance"
-            Link="https://linkedin.com/in/bhargav-sai-ram-kattunga-047365236"
+            Link="https://www.behance.net/bhargavkattung"
           />
-          <Icons variant="Medium" Link="mailto:bhargav.kattunga@gmail.com" />
+          <Icons variant="Medium" Link="https://medium.com/@bhargav.kattunga" />
           <Icons variant="Email" Link="mailto:bhargav.kattunga@gmail.com" />
         </div>
       </div>

@@ -4,6 +4,7 @@ import AboutCompany from '../components/About/AboutCompany'
 import AboutThings from '../components/About/AboutThings'
 import AboutHobbies from '../components/About/AboutHobbies'
 import DesignSection from '../components/About/AboutDesign'
+import Bucketlist from '../components/About/Bucketlist'
 
 const About = () => {
     return (
@@ -15,6 +16,7 @@ const About = () => {
             <AboutThings />
             <DesignSection />
             <AboutHobbies />
+            <Bucketlist />
 
             <div className=' bg-dark py-3 text-center text-sm flex items-center gap-2 justify-center '>
                 <span>🤫 </span>  Since you came a long way let me share my source where I find inspiration <span onClick={() => window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank")} className='  font-light text-subtitle cursor-pointer hover:underline'>

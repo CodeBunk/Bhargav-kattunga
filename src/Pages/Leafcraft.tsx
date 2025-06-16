@@ -11,9 +11,10 @@ import image9 from "../../public/leafctaft/img9.jpg";
 import image10 from "../../public/leafctaft/img10.png";
 import image11 from "../../public/leafctaft/img11.jpg";
 import Webp from "../../public/leafctaft/Image.webp";
+import { useNavigate } from "react-router";
 const Leafcraft = () => {
   return (
-    <div className=" text-white bg-black min-h-screen mt-10  ">
+    <div className=" text-white relative min-h-screen mt-10 ">
       <img src={image1} className=" w-full " alt="" />
       <img src={image2} className=" w-full " alt="" />
       <img src={image3} className=" w-full " alt="" />

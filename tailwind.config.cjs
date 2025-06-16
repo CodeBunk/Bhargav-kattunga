@@ -27,7 +27,7 @@ module.exports = {
         "muted": "#64748B",
         "subtitle": "#3F3D56B2",
         "sub": "#3F3D56",
-        "green-1": "#00F135",
+        "green-1": "#37D15D",
         "blue": " #005BAC",
         "yellow-1": "#FFE500",
         out: "#E0E3EB",

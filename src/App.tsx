@@ -23,6 +23,7 @@ import About from "./Pages/About";
 import Resume from "./Pages/Resume";
 import Curated from "./Pages/Curated";
 import Archives from "./Pages/Archives";
+import CuratedLayout from "./components/Layouts/CuratedLayout";
 
 
 function ScrollToTop() {
@@ -58,12 +59,16 @@ function App() {
         <Route path="/curated" element={<Curated />} />
         <Route path="/project" element={<Wishtronics />} />
         <Route path="/archives" element={<Archives />} />
-        <Route path="/kingzqueenz" element={<KingsQueen />} />
-        <Route path="/oneImmersive" element={<OneImmersive />} />
-        <Route path="/travana" element={<div />} />
-        <Route path="/travia" element={<Travia />} />
-        <Route path="/Leafcraft" element={<Leafcraft />} />
-        <Route path="/technovation" element={<div />} />
+        <Route element={<CuratedLayout />} >
+
+          <Route path="/curated/kingzqueenz" element={<KingsQueen />} />
+          <Route path="/curated/oneImmersive" element={<OneImmersive />} />
+          <Route path="/curated/travana" element={<Travia />} />
+          <Route path="/curated/travia" element={<Travia />} />
+          <Route path="/curated/Leafcraft" element={<Leafcraft />} />
+          <Route path="/curated/technovation" element={<div />} />
+        </Route>
+
         {/* </Route> */}
       </Routes>
     </BrowserRouter >
