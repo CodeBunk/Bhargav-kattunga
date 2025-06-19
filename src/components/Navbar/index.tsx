@@ -230,11 +230,11 @@ const Navbar = () => {
     md:hidden fixed top-16 left-0
     w-full h-[calc(100vh-64px)]
     backdrop-blur-lg bg-white z-40
-    transform transition-transform duration-300 ease-in-out
+    transform transition-transform duration-300 ease-in-out 
     ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}
   `}
       >
-        <div className="px-4 md:px-10 py-4 flex flex-col gap-4">
+        <div className="px-4 md:px-10 py-4 flex flex-col pt-10  gap-4">
           {NavbarData.map((item, idx) =>
             item.subcat ? (
               <div key={idx}>
@@ -298,11 +298,17 @@ const Navbar = () => {
           )}
 
           {/* Social icons */}
-          <div className="pt-4 flex gap-4 justify-center">
-            <Icons variant="LinkedIn" Link="…" />
-            <Icons variant="Behance" Link="…" />
-            <Icons variant="Medium" Link="…" />
-            <Icons variant="Email" Link="…" />
+          <div className="pt-4 flex gap-4  justify-center">
+            <Icons
+              variant="LinkedIn"
+              Link="https://linkedin.com/in/bhargav-sai-ram-kattunga-047365236"
+            />
+            <Icons
+              variant="Behance"
+              Link="https://www.behance.net/bhargavkattung"
+            />
+            <Icons variant="Medium" Link="https://medium.com/@bhargav.kattunga" />
+            <Icons variant="Email" Link="mailto:bhargav.kattunga@gmail.com" />
           </div>
         </div>
       </div>
