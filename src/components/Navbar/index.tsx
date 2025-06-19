@@ -1,47 +1,52 @@
 import React, { useEffect, useRef, useState } from "react";
-import LOGO from "/Bhargav.svg";
+import LOGO from "/BhargavLogo.jpg";
 import Icons from "../Icons";
 import { useLocation, useNavigate } from "react-router";
 import Button from "../Atoms/Button";
-import { list } from "postcss";
+import { Menu, X } from "lucide-react";
+
 import Curated from "../../../public/navbar/curated.gif"
 import archives from "../../../public/navbar/archives.gif"
 import defaultGIF from "../../../public/navbar/default.gif"
+const NavbarData = [
+  { name: "Home", URL: "/" },
+  { name: "About", URL: "/about" },
+  {
+    name: "Projects",
+    subcat: [
+      {
+        name: "Curated",
+        subtitle: "Man! It's really hard to show only a couple things as a designer",
+        URL: "/curated",
+        gif: Curated
 
+      }, {
+        name: "Archives",
+        subtitle: "All the things that I was forced to aside with time",
+        URL: "/archives",
+        gif: archives
+
+      }],
+    subtitle: "My curated projects",
+    gif: defaultGIF
+  },
+  // { name: "Archives", URL: "/archives", },
+  { name: "Resume", URL: "/resume" },
+
+];
 
 const Navbar = () => {
   const location = useNavigate();
 
 
   const [projects, setprojects] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
+
   const [gif, setGif] = useState(defaultGIF)
   const currentLocation = useLocation()
-  const NavbarData = [
-    { name: "Home", URL: "/" },
-    { name: "About", URL: "/about" },
-    {
-      name: "Projects",
-      subcat: [
-        {
-          name: "Curated",
-          subtitle: "Man! It's really hard to show only a couple things as a designer",
-          URL: "/curated",
-          gif: Curated
 
-        }, {
-          name: "Archives",
-          subtitle: "All the things that I was forced to aside with time",
-          URL: "/archives",
-          gif: archives
 
-        }],
-      subtitle: "My curated projects",
-      gif: defaultGIF
-    },
-    // { name: "Archives", URL: "/archives", },
-    { name: "Resume", URL: "/resume" },
-
-  ];
   // ref that wraps the Projects button + dropdown
   const projectsRef = useRef<HTMLDivElement>(null);
 
@@ -63,13 +68,14 @@ const Navbar = () => {
     };
   }, [projects]);
 
+
   return (
     <div
       className="w-screen backdrop-blur-lg border-b border-gray bg-white flex justify-between text-black items-center md:px-10 px-4 py-4 fixed top-0 left-0 z-10">
-      {/* <img
+      <img
         src={LOGO}
         alt=""
-        className="md:h-16 h-10 hover:scale-105  transition-all duration-300 cursor-pointer "
+        className="md:h-16 h-10 hover:scale-105  rounded-xl  md:hidden transition-all duration-300 cursor-pointer "
         onClick={() => (
           location("/"),
           window.scrollTo({
@@ -78,7 +84,7 @@ const Navbar = () => {
             behavior: "smooth",
           })
         )}
-      /> */}
+      />
       <div onClick={() => (
         location("/"),
         window.scrollTo({
@@ -86,10 +92,20 @@ const Navbar = () => {
           left: 0,
           behavior: "smooth",
         })
-      )} >
+      )} className=" md:block hidden">
         Bhargav Sai Ram Kattunga
       </div>
-      <div className="  flex items-center transition-all duration-500 ">
+      {/* Mobile Hamburger */}
+      <div className=" md:hidden transition-all duration-300 flex items-center ml-auto text-black" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        {/* <svg width="24" height="24" fill="#000000" viewBox="0 0 24 24"> */}
+        {isMobileMenuOpen ? (
+          <X className="h-10 w-10 text-black" />
+        ) : (
+          <Menu className="h-10 w-10 text-black" />
+        )}
+        {/* </svg> */}
+      </div>
+      <div className="  md:flex hidden items-center transition-all duration-500 ">
         {NavbarData.map((props: any) => (
           <div className=" flex pr-1 gap-1 items-center">
 
@@ -154,6 +170,61 @@ const Navbar = () => {
           <Icons variant="Email" Link="mailto:bhargav.kattunga@gmail.com" />
         </div>
       </div>
+
+      {/* Mobile Nav Drawer */}
+      <div
+        className={`md:hidden fixed top-16 left-0 w-full h-screen bg-white z-40 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+      >
+        <div className="flex flex-col p-6 gap-6 pt-10">
+          {NavbarData.map((item: any, index) => (
+            <div key={index}>
+              {item.name === "Projects" ? (
+                <>
+                  <div
+                    onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
+                    className="flex justify-between transition-all duration-300 items-center cursor-pointer"
+                  >
+                    <p className="font-bold text-lg">{item.name}</p>
+
+                    <span className={` transition-transform ${mobileProjectsOpen ? "rotate-180 " : ""} `}>
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  {mobileProjectsOpen && (
+                    <div className="pl-4 mt-2 flex flex-col gap-2">
+                      {item.subcat?.map((sub: any, subIdx: number) => (
+                        <p
+                          key={subIdx}
+                          className="cursor-pointer"
+                          onClick={() => {
+                            location(sub.URL);
+                            setIsMobileMenuOpen(false);
+                          }}
+                        >
+                          {sub.name}
+                        </p>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : (
+                <p
+                  className="cursor-pointer font-bold text-lg"
+                  onClick={() => {
+                    location(item?.URL);
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  {item.name}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
 
     </div>
   );

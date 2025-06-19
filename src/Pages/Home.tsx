@@ -16,7 +16,7 @@ const Home = ({ muted }) => {
 
   const Data = [< Home1 value={muted} />, < Home2 />, < Home3 />, < Home4 />, <Home5 />]
   return (
-    <div className=' w-full h-full '>
+    <div className=' w-full h-full overflow-x-clip '>
       {Data?.map((data: any, index) => (
         <div key={index} className='  sticky top-0    w-screen h-[300vh] bg-white   '>
           <div className='  sticky top-0  w-screen h-screen  flex items-center justify-center  '>
