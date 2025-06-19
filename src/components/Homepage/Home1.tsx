@@ -11,12 +11,12 @@ import Phototext from "../../../public/Hero/photography.png"
 import sound1 from "../../../public/Hero/click.mp3"
 import sound from "../../../public/Hero/Sound.mp3"
 // import sound from "../../../public/Hero/buttonsound.mp3"
-const Home1 = () => {
+const Home1 = ({ value }) => {
   const audioRef = useRef(new Audio(sound));
 
   const playSound = () => {
     audioRef.current.currentTime = 0; // Reset the audio to the beginning
-    audioRef.current.play();
+    !value && audioRef.current.play();
   };
   return (
     <div className=' w-full h-full bg-white ' >

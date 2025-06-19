@@ -10,7 +10,7 @@ const AboutHobbies = () => {
         id: 1,
         title: "Anime",
         icon: "📺",
-        link: "https://www.imdb.com/list/ls596551981/?ref_=ext_shr_lnk",
+        link: "https://www.imdb.com/list/ls596551981/",
         subtitle: "From classics to new-gen, always up for a debate!",
 
     },
@@ -18,30 +18,26 @@ const AboutHobbies = () => {
         id: 2,
         title: "Photography",
         icon: "📸",
-
-        link: "https://www.imdb.com/list/ls596551981/?ref_=ext_shr_lnk",
-
+        link: "https://www.instagram.com/bixeels",
         subtitle: "Sneak peak into my gallery."
     },
     {
         id: 3,
         title: "Competitive Gaming",
         icon: "🎮",
-
-        link: "https://www.imdb.com/list/ls596551981/?ref_=ext_shr_lnk",
-
+        link: "",
         subtitle: "I steam off with strategy, skill, and a little bit of rage."
     },
     {
         id: 4,
         title: "Music & Podcast",
         icon: "🎵 ",
-
-        link: "https://www.imdb.com/list/ls596551981/?ref_=ext_shr_lnk",
-
+        link: "https://open.spotify.com/user/31hjngnp7dtku4bewbhfdsocmexu",
         subtitle: "Always in search of the next favourite thing"
     },
     ]
+
+
     return (
         <div className=' px-10 max-w-7xl w-full mx-auto pb-10  border-b  border-gray '>
             <div className=' text-center py-10 space-y-1  '>

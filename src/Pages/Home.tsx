@@ -12,9 +12,9 @@ import Home2 from "../components/Homepage/Home2";
 import Home3 from "../components/Homepage/Home3";
 import Home4 from "../components/Homepage/Home4";
 import Home5 from "../components/Homepage/Home5";
-const Home = () => {
+const Home = ({ muted }) => {
 
-  const Data = [< Home1 />, < Home2 />, < Home3 />, < Home4 />, <Home5 />]
+  const Data = [< Home1 value={muted} />, < Home2 />, < Home3 />, < Home4 />, <Home5 />]
   return (
     <div className=' w-full h-full '>
       {Data?.map((data: any, index) => (

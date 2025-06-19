@@ -24,6 +24,10 @@ import Resume from "./Pages/Resume";
 import Curated from "./Pages/Curated";
 import Archives from "./Pages/Archives";
 import CuratedLayout from "./components/Layouts/CuratedLayout";
+import useClickSound from "./Pages/sound";
+import sound from "../public/Hero/Sound.mp3"
+import MuteButton from "./components/muteButton";
+
 
 
 function ScrollToTop() {
@@ -42,6 +46,30 @@ function ScrollToTop() {
 }
 
 function App() {
+  const [muted, setmuted] = useState(false)
+
+  const playClickSound = useClickSound(sound, muted);
+
+
+  useEffect(() => {
+    const handleClick = () => {
+
+      console.log(muted, "status"),
+        !muted ?
+          playClickSound() : null;
+    };
+    document.addEventListener("click", handleClick);
+    return () => {
+      document.removeEventListener('click', handleClick);
+    };
+
+  }, [playClickSound]);
+
+
+  const handle = () => {
+    setmuted(!muted)
+  }
+
 
   return (
 
@@ -51,7 +79,7 @@ function App() {
       <Routes>
         {/* <Route path="/resume" element={<Resume />} /> */}
 
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home muted={muted} />} />
         {/* <Route element={<BaseLayout />} > */}
         <Route path="/project" element={<Projects />} />
         <Route path="/resume" element={<PdfViewer />} />
@@ -71,6 +99,7 @@ function App() {
 
         {/* </Route> */}
       </Routes>
+      <MuteButton handleChe={() => handle()} value={muted} />
     </BrowserRouter >
 
   );

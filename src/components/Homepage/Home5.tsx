@@ -1,8 +1,10 @@
 import React from 'react'
 import Button from '../Atoms/Button'
 import Footer from '../Footer'
+import { useNavigate } from 'react-router'
 
 const Home5 = () => {
+  const location = useNavigate()
   return (
     <div className=' flex flex-col pt-20  gap-10 items-center'>
       <div>
@@ -54,9 +56,9 @@ const Home5 = () => {
           So, how do I contribute? Beautiful UI? Nah. <br /> It's about interactions & strategies that <br /> push things further.
         </div>
         <div className=' flex flex-col items-center text-center gap-4   '>
-          <Button className=' w-32  ' variant="secondary">My Work</Button>
+          <Button onClick={() => location("/curated")} className=' w-32  ' variant="secondary">My Work</Button>
           <div className=' flex flex-col text-center  leading-none'>
-            <span className=' text-gray1   '> So you’ve noticed that I’m standing already </span>
+            <span className=' text-gray1   '> So you've noticed that I'm standing already </span>
             More about me
           </div>
         </div>

@@ -154,6 +154,7 @@ const Navbar = () => {
           <Icons variant="Email" Link="mailto:bhargav.kattunga@gmail.com" />
         </div>
       </div>
+
     </div>
   );
 };

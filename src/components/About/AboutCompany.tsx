@@ -132,7 +132,7 @@ const AboutCompany = () => {
             works: [
                 {
                     image: intrepidLogo,
-                    title: "Intrepid (formerly Travana) / 10/2023-04/2024 / Online",
+                    title: "Intripid (formerly Travana) / 10/2023-04/2024 / Online",
                     subtitle:
                         "Led UX and product design for a travel-focused platform; ran user interviews, wireframing, and end-to-end prototyping to refine the booking flow.",
                 },
@@ -193,14 +193,14 @@ const AboutCompany = () => {
             works: [
                 {
                     image: adpluriLogo,
-                    title: "ADPLURI / 01/2023-Present / Online",
+                    title: "ADPList / 01/2023-Present / Online",
                     subtitle:
                         "Mentored 12+ designers globally—focusing on portfolios, career shifts, and soft skills. Curated peer reviews and design conversations across 30+ sessions.",
                 },
 
                 {
                     image: tinkeringLabsLogo,
-                    title: "ATDC Tinkering Labs / 01/2023-Present / Online",
+                    title: "ATAL Tinkering Labs / 01/2023-Present / Online",
                     subtitle:
                         "Co-designed hands-on STEM workshops for school students. Guided prototyping sessions and student pitches to foster creative problem-solving.",
                 },

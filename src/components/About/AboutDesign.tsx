@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import sara from "../../../public/About/Design/first.png"
 import prashanth from "../../../public/About/Design/prashanth.png"
 import samarth from "../../../public/About/Design/smarth.png"
@@ -8,27 +8,26 @@ import mohith from "../../../public/About/Design/mohith.png"
 const DesignSection = () => {
 
     const [Selected, setSelected] = useState(0)
-    const Data = [{
-        id: 1,
-        image: sara,
-    },
-    {
-        id: 2,
-        image: prashanth,
-    },
-    {
-        id: 3,
-        image: samarth,
-    },
-    {
-        id: 4,
-        image: mohith,
-    },
-
+    const Data = [
+        {
+            id: 1,
+            image: sara,
+        },
+        {
+            id: 2,
+            image: prashanth,
+        },
+        {
+            id: 3,
+            image: samarth,
+        },
+        {
+            id: 4,
+            image: mohith,
+        },
     ]
 
-
-    React.useEffect(() => {
+    useEffect(() => {
         const interval = setInterval(() => {
             setSelected((prev) => (prev + 1) % Data.length);
         }, 3000); // Change slide every 5 seconds
@@ -47,7 +46,7 @@ const DesignSection = () => {
             <div className=' grid grid-cols-4 gap-2 items-center '>
 
                 {Data?.map((data: any, index: any) =>
-                    <div onClick={() => setSelected(data?.id)} className={` ${Selected == index ? " bg-black  " : " bg-[#D9D9D9] "}   bg-black w-full h-2 rounded-full cursor-pointer `}>
+                    <div onClick={() => (setSelected(index))} className={` ${Selected == index ? " bg-black  " : " bg-[#D9D9D9] "}    w-full h-2 rounded-full cursor-pointer `}>
                     </div>
                 )}
             </div>

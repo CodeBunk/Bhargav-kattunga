@@ -1,7 +1,9 @@
 import React from 'react'
 import Button from '../Atoms/Button'
+import { useNavigate } from 'react-router'
 
 const Home2 = () => {
+  const location = useNavigate()
   return (
     <div className=' flex flex-col pt-20  gap-10 items-center'>
       <div>
@@ -26,8 +28,8 @@ const Home2 = () => {
       </div>
       <div className=' flex flex-col text-center gap-4   '>
         <div className=' grid grid-cols-2   gap-2 '>
-          <Button className='  ' variant="secondary">Projects</Button>
-          <Button className=' ' variant="primary">My Background</Button>
+          <Button onClick={() => location("/curated")} className='  ' variant="secondary">Projects</Button>
+          <Button onClick={() => location("/about")} className=' ' variant="primary">My Background</Button>
         </div>
         <div className=' flex flex-col text-center '>
 
