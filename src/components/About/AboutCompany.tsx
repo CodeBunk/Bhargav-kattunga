@@ -234,7 +234,7 @@ const AboutCompany = () => {
     ];
 
     return (
-        <div className=' px-10 max-w-7xl w-full mx-auto ' >
+        <div className=' md:px-10 px-4 max-w-7xl w-full mx-auto ' >
             <div className=' flex gap-5 items-center  pb-5 '>
                 {Data?.map((data: any, index) =>
                     <div onClick={() => setSelected(index)} className={` ${Selected == index ? " text-black " : "opacity-50 "}  cursor-pointer `}>
@@ -255,7 +255,7 @@ const AboutCompany = () => {
                         </span>}
                 </div>
             </div>
-            <div className=' pt-10 w-full grid grid-cols-2 grid-rows-4 grid-flow-col gap-10 ' >
+            <div className=' pt-10 w-full md:grid sm:grid-cols-2 md:grid-rows-4 grid-flow-col gap-10 ' >
                 {Data[Selected]?.works.map((data: any) =>
                     <div className='space-y-1  gap-5 flex items-center  justify-center w-full   '>
                         <img src={data?.image} alt="" className=' w-24 my-auto    aspect-square object-cover' />
