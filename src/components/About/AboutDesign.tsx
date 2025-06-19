@@ -45,8 +45,8 @@ const DesignSection = () => {
             </div>
             <div className=' grid grid-cols-4 gap-2 items-center '>
 
-                {Data?.map((index: any) =>
-                    <div onClick={() => (setSelected(index))} className={` ${Selected == index ? " bg-black  " : " bg-[#D9D9D9] "}    w-full h-2 rounded-full cursor-pointer `}>
+                {Data?.map((data: any) =>
+                    <div onClick={() => (setSelected(data?.id - 1))} className={` ${Selected == data?.id - 1 ? " bg-black  " : " bg-[#D9D9D9] "}    w-full h-2 rounded-full cursor-pointer `}>
                     </div>
                 )}
             </div>

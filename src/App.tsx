@@ -52,18 +52,18 @@ function App() {
 
 
   useEffect(() => {
-    const handleClick = () => {
-
-      console.log(muted, "status"),
-        !muted ?
-          playClickSound() : null;
-    };
-    document.addEventListener("click", handleClick);
-    return () => {
-      document.removeEventListener('click', handleClick);
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      // If it’s a BUTTON (or matches your custom selector) and sound isn’t muted
+      if (target.tagName === 'BUTTON' && !muted) {
+        playClickSound();
+      }
     };
 
-  }, [playClickSound]);
+    document.addEventListener('click', handleClick);
+    return () => document.removeEventListener('click', handleClick);
+  }, [muted, playClickSound]);
+
 
 
   const handle = () => {

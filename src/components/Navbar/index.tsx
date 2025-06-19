@@ -172,7 +172,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Nav Drawer */}
-      <div
+      {/* <div
         className={`md:hidden fixed top-16 left-0 w-full h-screen bg-white z-40 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
       >
@@ -223,7 +223,90 @@ const Navbar = () => {
             </div>
           ))}
         </div>
+      </div> */}
+      {/* Mobile Nav Drawer */}
+      <div
+        className={`
+    md:hidden fixed top-16 left-0
+    w-full h-[calc(100vh-64px)]
+    backdrop-blur-lg bg-white z-40
+    transform transition-transform duration-300 ease-in-out
+    ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}
+  `}
+      >
+        <div className="px-4 md:px-10 py-4 flex flex-col gap-4">
+          {NavbarData.map((item, idx) =>
+            item.subcat ? (
+              <div key={idx}>
+                <Button
+                  variant="text"
+                  className="!w-full flex  gap-2  items-center !py-2 !px-0"
+                  onClick={() => setMobileProjectsOpen(old => !old)}
+                >
+                  <span className=" text-center">{item.name}</span>
+                  <span
+                    className={`transition-transform duration-300 ${mobileProjectsOpen ? "rotate-180" : ""
+                      }`}
+                  >
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                </Button>
+
+                {/* Projects submenu with fade/slide */}
+                <div
+                  className={`
+              overflow-hidden
+              transition-[max-height,opacity,transform]
+              duration-300 ease-in-out
+              ${mobileProjectsOpen
+                      ? "max-h-60 opacity-100 translate-y-0"
+                      : "max-h-0 opacity-0 -translate-y-2"
+                    }
+            `}
+                >
+                  <div className="px-4 pt-4  flex flex-col gap-2">
+                    {item.subcat.map((sub, i2) => (
+                      <Button
+                        key={i2}
+                        variant="secondary"
+                        className="!w-full text-left !py-2 !px-0"
+                        onClick={() => {
+                          location(sub.URL);
+                          setIsMobileMenuOpen(false);
+                        }}
+                      >
+                        {sub.name}
+                      </Button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Button
+                key={idx}
+                variant="text"
+                className="!w-full text-left !py-2 !px-0"
+                onClick={() => {
+                  location(item.URL);
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                {item.name}
+              </Button>
+            )
+          )}
+
+          {/* Social icons */}
+          <div className="pt-4 flex gap-4 justify-center">
+            <Icons variant="LinkedIn" Link="…" />
+            <Icons variant="Behance" Link="…" />
+            <Icons variant="Medium" Link="…" />
+            <Icons variant="Email" Link="…" />
+          </div>
+        </div>
       </div>
+
 
 
     </div>
