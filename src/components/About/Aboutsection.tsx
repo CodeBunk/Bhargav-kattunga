@@ -14,7 +14,12 @@ const Aboutsection = () => {
         name: "For Anyone",
         image: anyone1,
         title: "Hello there! I love crafting products and building stories",
-        subtitle: "I am always dreaming and envisaging new things, are you too?😶‍🌫️"
+        subtitle: (
+            <>
+                I am always dreaming and envisaging new things, <br />
+                are you too? 😶‍🌫️
+            </>
+        )
     },
     {
         id: 2,
@@ -57,7 +62,7 @@ const Aboutsection = () => {
         <div className=' px-10 max-w-7xl w-full mx-auto pb-10 border-b border-gray '>
             <div className=' flex gap-5 items-center '>
                 {Data?.map((data: any, index) =>
-                    <div onClick={() => setSelected(index)} className={` ${Selected == index ? " text-black " : "opacity-50 "}  cursor-pointer `}>
+                    <div onClick={() => setSelected(index)} className={` ${Selected == index ? " text-black " : "opacity-50 "} cursor - pointer`}>
                         {data?.name}
                     </div>
                 )}

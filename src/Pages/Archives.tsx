@@ -56,7 +56,7 @@ const Archives = () => {
                 "Designed an intuitive UI for configuring backend logic based on event triggers. Prioritized flexibility and dev experience.",
             date: "07/2022 - 01/2023  |  10/2023 - 01/2024",
             tags: ["lowcode", "ui", "ux"],
-            link: "https://example.com/instonomy",
+            link: "https://unitsdb.com",
         },
         {
             id: 7,
@@ -128,7 +128,7 @@ const Archives = () => {
                 "Created a clean, conversion-focused website for a housing developer to highlight custom builds and service areas.",
             date: "03/2023",
             tags: ["realestate", "marketingdesign", "websitedesign"],
-            link: "https://example.com/indukuri",
+            link: "https://indukurilifespaces.com/project-lakeshore.php",
         },
         {
             id: 15,
@@ -155,35 +155,35 @@ const Archives = () => {
                 "Developed and hosted a personal website to present work across travel, branding, systems, and design explorations.",
             date: "01/2024",
             tags: ["portfolio", "webdesign", "personalbrand"],
-            link: "https://example.com/my-portfolio-2024",
+            link: "Bhargavkattunga.in/Portfolio2024",
         },
-        {
-            id: 18,
-            title: "My Portfolio 2024 (20-pager)", subtitle: " Comprehensive project showcase booklet",
-            description:
-                "Designed a well-organized 20-page PDF to summarize processes, visuals, and project thinking for recruiters and mentors.",
-            date: "01/2024",
-            tags: ["portfolio", "casestudy", "work"],
-            link: "https://example.com/my-portfolio-2024-pdf",
-        },
-        {
-            id: 19,
-            title: "My Portfolio 2022", subtitle: " Early portfolio for learning and outreach",
-            description:
-                "Explored storytelling and structure in this mid-phase portfolio to develop a confident design voice.",
-            date: "02/2022",
-            tags: ["portfolio", "casestudy", "ux", "ui"],
-            link: "https://example.com/my-portfolio-2022",
-        },
-        {
-            id: 20,
-            title: "My Portfolio 2021", subtitle: " First portfolio transitioning from engineering",
-            description:
-                "Used this early portfolio to explore visual design from an engineering lens while discovering communication tools.",
-            date: "05/2021",
-            tags: ["portfolio", "beginner"],
-            link: "https://example.com/my-portfolio-2021",
-        },
+        // {
+        //     id: 18,
+        //     title: "My Portfolio 2024 (20-pager)", subtitle: " Comprehensive project showcase booklet",
+        //     description:
+        //         "Designed a well-organized 20-page PDF to summarize processes, visuals, and project thinking for recruiters and mentors.",
+        //     date: "01/2024",
+        //     tags: ["portfolio", "casestudy", "work"],
+        //     link: "https://example.com/my-portfolio-2024-pdf",
+        // },
+        // {
+        //     id: 19,
+        //     title: "My Portfolio 2022", subtitle: " Early portfolio for learning and outreach",
+        //     description:
+        //         "Explored storytelling and structure in this mid-phase portfolio to develop a confident design voice.",
+        //     date: "02/2022",
+        //     tags: ["portfolio", "casestudy", "ux", "ui"],
+        //     link: "https://example.com/my-portfolio-2022",
+        // },
+        // {
+        //     id: 20,
+        //     title: "My Portfolio 2021", subtitle: " First portfolio transitioning from engineering",
+        //     description:
+        //         "Used this early portfolio to explore visual design from an engineering lens while discovering communication tools.",
+        //     date: "05/2021",
+        //     tags: ["portfolio", "beginner"],
+        //     link: "https://example.com/my-portfolio-2021",
+        // },
         {
             id: 21,
             title: "Nirvana (College Fest)", subtitle: " Branding and communication for annual fest",

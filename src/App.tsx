@@ -27,6 +27,7 @@ import CuratedLayout from "./components/Layouts/CuratedLayout";
 import useClickSound from "./Pages/sound";
 import sound from "../public/Hero/Sound.mp3"
 import MuteButton from "./components/muteButton";
+import MyPortfolio2024 from "./Pages/MyPortfolio2024";
 
 
 
@@ -87,6 +88,7 @@ function App() {
         <Route path="/curated" element={<Curated />} />
         <Route path="/project" element={<Wishtronics />} />
         <Route path="/archives" element={<Archives />} />
+        <Route path="/Portfolio2024" element={<MyPortfolio2024 />} />
         <Route element={<CuratedLayout />} >
 
           <Route path="/curated/kingzqueenz" element={<KingsQueen />} />

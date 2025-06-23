@@ -42,15 +42,15 @@ const AboutCompany = () => {
             works: [
                 {
                     image: cloudResourcesLogo,
+                    link: "https://thepeninsulaqatar.com/article/22/01/2025/doha-bank-launches-new-corporate-mobile-banking-app",
                     title: "Cloud Resources / 06/2024-Present / Doha, Qatar",
                     subtitle:
                         "Designed the corporate banking app and enhanced the retail banking experience by introducing a unified risk framework, collaborating with stakeholders to align on SME-focused product strategy, and conducting cross-functional workshops.",
-                    link: "https://www.cloudresources.com/"
                 },
                 {
                     image: leafcraftLogo,
                     link: "https://leafcraft.co/",
-                    title: "LeafCraft / 06/2022-06/2024 / Hyderabad, India",
+                    title: "LeafCraft / 03/2022-06/2024 / Hyderabad, India",
                     subtitle:
                         "Led end-to-end product & experience design for multiple SaaS tools—including a Static Website Builder, Application Builder, and Visual Engagement tool; ran user research, prototyping, and usability testing.",
                 },
@@ -68,13 +68,13 @@ const AboutCompany = () => {
             Background:
                 "These early internships gave me exposure across product, education, and gaming sectors—helping me understand product lifecycle deeply, and paving my transition from Mechatronics to UX and product design.",
             works: [
-                {
-                    image: leafcraftLogo,
-                    link: "",
-                    title: "LeafCraft / 06/2022-06/2022 / Hyderabad, India",
-                    subtitle:
-                        "Conducted UX research and usability audits for in-progress design tools; synthesized insights into UX prototypes and recommended design changes.",
-                },
+                // {
+                //     image: leafcraftLogo,
+                //     link: "",
+                //     title: "LeafCraft / 06/2022-06/2022 / Hyderabad, India",
+                //     subtitle:
+                //         "Conducted UX research and usability audits for in-progress design tools; synthesized insights into UX prototypes and recommended design changes.",
+                // },
                 {
                     image: acceltronLogo,
                     title: "Acceltron Technologies / 05/2021-09/2021 / Hyderabad, India",
@@ -133,25 +133,28 @@ const AboutCompany = () => {
                 {
                     image: intrepidLogo,
                     title: "Intripid (formerly Travana) / 10/2023-04/2024 / Online",
+                    link: "https://travana.io/",
                     subtitle:
                         "Led UX and product design for a travel-focused platform; ran user interviews, wireframing, and end-to-end prototyping to refine the booking flow.",
                 },
-
                 {
                     image: oneImmersiveLogo,
                     title: "One Immersive / 07/2022-10/2022 / Hyderabad, India",
+                    link: "https://www.behance.net/gallery/154949507/OI-Branding-Guidelines",
                     subtitle:
                         "Helped teams articulate AR/VR concepts by designing clear brand systems and visual guidelines across a modular 3D configurator.",
                 },
                 {
                     image: traviaLogo,
                     title: "Travia / 10/2022-12/2022 / Online",
+                    link: "https://www.behance.net/gallery/159697011/TRAVIA-A-Travel-Application-Case-Study",
                     subtitle:
                         "Co-designed a peer-to-peer travel-planning exchange at a high school senior hackathon; focused on rapid prototyping through conversation.",
                 },
                 {
                     image: uMediaLogo,
                     title: "U Media / 01/2021-08/2023 / Hyderabad, India",
+                    link: "https://www.behance.net/gallery/166844881/Portfolio-2023",
                     subtitle:
                         "Developed brand identities by distilling core essence into visual systems; delivered complete style guides under tight deadlines.",
                 },
