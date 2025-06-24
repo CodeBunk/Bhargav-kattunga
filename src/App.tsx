@@ -89,7 +89,7 @@ function App() {
         <Route path="/curated" element={<Curated />} />
         <Route path="/project" element={<Wishtronics />} />
         <Route path="/archives" element={<Archives />} />
-        <Route path="/Portfolio2024" element={<MyPortfolio2024 />} />
+        <Route path="/Portfolio" element={<MyPortfolio2024 />} />
         <Route element={<CuratedLayout />} >
 
           <Route path="/curated/kingzqueenz" element={<KingsQueen />} />
