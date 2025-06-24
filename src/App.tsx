@@ -46,9 +46,10 @@ function ScrollToTop() {
   return null;
 }
 
+
 function App() {
   const [muted, setmuted] = useState(false)
-
+  console.log(window.location?.pathname, "pathhh")
   const playClickSound = useClickSound(sound, muted);
 
 
@@ -56,14 +57,14 @@ function App() {
     const handleClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       // If it’s a BUTTON (or matches your custom selector) and sound isn’t muted
-      if (target.tagName === 'BUTTON' && !muted) {
+      if (target.closest("button") && !muted) {
         playClickSound();
       }
     };
 
     document.addEventListener('click', handleClick);
     return () => document.removeEventListener('click', handleClick);
-  }, [muted, playClickSound]);
+  }, [muted, playClickSound, window.location?.pathname]);
 
 
 
@@ -76,13 +77,13 @@ function App() {
 
     <BrowserRouter>
       <ScrollToTop />
-      <Navbar />
+      <Navbar muted={muted} />
       <Routes>
         {/* <Route path="/resume" element={<Resume />} /> */}
 
         <Route path="/" element={<Home muted={muted} />} />
         {/* <Route element={<BaseLayout />} > */}
-        <Route path="/project" element={<Projects />} />
+        <Route path="/project" element={<Projects muted={muted} />} />
         <Route path="/resume" element={<PdfViewer />} />
         <Route path="/about" element={<About />} />
         <Route path="/curated" element={<Curated />} />

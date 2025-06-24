@@ -44,6 +44,7 @@ const Button = ({
 
     // Loading state
     const renderContent = () => {
+
         if (loading) {
             return (
                 <>
@@ -70,7 +71,7 @@ const Button = ({
             onClick={onClick}
 
             disabled={disabled || loading}
-            className={`${baseClasses}    whitespace-nowrap ${variantClasses[variant]} ${disabledClasses} ${widthClass} ${className}`}
+            className={`${baseClasses}   whitespace-nowrap ${variantClasses[variant]} ${disabledClasses} ${widthClass} ${className}`}
         >
             {renderContent()}
         </button>

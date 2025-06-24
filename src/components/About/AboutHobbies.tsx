@@ -25,7 +25,7 @@ const AboutHobbies = () => {
         id: 3,
         title: "Competitive Gaming",
         icon: "🎮",
-        link: "",
+
         subtitle: "I steam off with strategy, skill, and a little bit of rage."
     },
     {
@@ -69,7 +69,7 @@ const AboutHobbies = () => {
                         </div>
                     )}
                 </div>
-            </div >
+            </div>
         </div>
 
     )

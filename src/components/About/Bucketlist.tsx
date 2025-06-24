@@ -3,6 +3,7 @@ import podcast from "../../../public/About/hobbies/podcast.png"
 import Hiking from "../../../public/About/hobbies/hiking.png"
 import Chemistry from "../../../public/About/hobbies/chemistry.png"
 import japan from "../../../public/About/hobbies/japan.png"
+import Button from '../Atoms/Button'
 
 const Bucketlist = () => {
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -69,7 +70,7 @@ const Bucketlist = () => {
 
 
     return (
-        <div className='md:px-10 px-6  max-w-7xl w-full mx-auto pb-10 border-b border-gray'>
+        <div className='md:px-10 px-6  max-w-7xl w-full mx-auto pb-10  '>
             <div className='text-center py-10 space-y-1'>
                 <div className='text-2xl'>My Bucketlist</div>
                 <div className='text-sm leading-normal pb-10'>Things I want to start... someday soon</div>
@@ -94,19 +95,19 @@ const Bucketlist = () => {
                 </div>
 
                 <div className='flex gap-3 pb-5'>
-                    <div onClick={() => handlescroll("prev")} className="p-2 flex items-center justify-center cursor-pointer h-8 w-8 bg-bgmuted rounded-full text-black border border-gray">
-                        <svg width="100%" height="100%" className="w-full h-full" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <button type='button' onClick={() => handlescroll("prev")} className="z-10 relative p-2 flex items-center justify-center cursor-pointer h-8 w-8 bg-bgmuted rounded-full text-black border border-gray">
+                        <svg width="100%" height="100%" aria-disabled className=" absolute z-0 w-[14px] h-[14px]" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.85355 3.14645C7.04882 3.34171 7.04882 3.65829 6.85355 3.85355L3.70711 7H12.5C12.7761 7 13 7.22386 13 7.5C13 7.77614 12.7761 8 12.5 8H3.70711L6.85355 11.1464C7.04882 11.3417 7.04882 11.6583 6.85355 11.8536C6.65829 12.0488 6.34171 12.0488 6.14645 11.8536L2.14645 7.85355C1.95118 7.65829 1.95118 7.34171 2.14645 7.14645L6.14645 3.14645C6.34171 2.95118 6.65829 2.95118 6.85355 3.14645Z" />
                         </svg>
-                    </div>
-                    <div onClick={() => handlescroll("next")} className="p-2 flex items-center justify-center cursor-pointer h-8 w-8 bg-bgmuted rounded-full text-black border border-gray">
+                    </button>
+                    <button type='button' onClick={() => handlescroll("next")} className="p-2 flex items-center justify-center cursor-pointer h-8 w-8 bg-bgmuted rounded-full text-black border border-gray" >
                         <svg width="100%" height="100%" className="w-full h-full rotate-180" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.85355 3.14645C7.04882 3.34171 7.04882 3.65829 6.85355 3.85355L3.70711 7H12.5C12.7761 7 13 7.22386 13 7.5C13 7.77614 12.7761 8 12.5 8H3.70711L6.85355 11.1464C7.04882 11.3417 7.04882 11.6583 6.85355 11.8536C6.65829 12.0488 6.34171 12.0488 6.14645 11.8536L2.14645 7.85355C1.95118 7.65829 1.95118 7.34171 2.14645 7.14645L6.14645 3.14645C6.34171 2.95118 6.65829 2.95118 6.85355 3.14645Z" />
                         </svg>
-                    </div>
+                    </button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

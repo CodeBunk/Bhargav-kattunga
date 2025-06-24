@@ -69,34 +69,39 @@ const Curated = () => {
   };
 
   return (
-    <div className="w-full h-full">
-      {Data.map((data, idx) => (
-        <div
-          key={idx}
-          className="sticky top-0 w-screen h-[300vh] bg-white"
-        >
-          <div className="sticky top-0 w-screen h-screen flex items-center justify-center">
-            <div
-              className="w-3/4 mx-auto flex flex-col pt-20 cursor-pointer"
-              onClick={() => handleNavigate(data.link)}
-            >
-              <img src={data.image} alt={data.title} className="pb-4" />
-              <div className="w-full flex items-center justify-between font-Manrope pb-2">
-                <h2 className="leading-none text-2xl font-semibold text-[#020617]">
-                  {data.title}
-                </h2>
-                <span className="leading-none text-xl text-sub">
-                  {data.timeline}
-                </span>
+    <>
+      <div className="w-full h-full">
+        {Data.map((data, idx) => (
+          <div
+            key={idx}
+            className="sticky top-0 w-screen h-[300vh] bg-white"
+          >
+            <div className="sticky top-0 w-screen h-screen flex items-center justify-center">
+              <div
+                className="w-3/4 mx-auto flex flex-col pt-20 cursor-pointer"
+                onClick={() => handleNavigate(data.link)}
+              >
+                <img src={data.image} alt={data.title} className="pb-4" />
+                <div className="w-full flex items-center justify-between font-Manrope pb-2">
+                  <h2 className="leading-none text-2xl font-semibold text-[#020617]">
+                    {data.title}
+                  </h2>
+                  <span className="leading-none text-xl text-sub">
+                    {data.timeline}
+                  </span>
+                </div>
+                <p className="leading-none font-medium text-left w-1/2 text-sm text-sub">
+                  {data.subtitle}
+                </p>
               </div>
-              <p className="leading-none font-medium text-left w-1/2 text-sm text-sub">
-                {data.subtitle}
-              </p>
             </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+      <Footer />
+    </>
+
+
   );
 };
 

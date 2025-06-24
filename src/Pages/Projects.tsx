@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router";
 
-const Projects = () => {
+const Projects = ({ muted }) => {
   const [show, setShow] = useState(false);
   const [limit, setlimit] = useState(3);
   const location = useNavigate();
@@ -32,7 +32,7 @@ const Projects = () => {
   ];
   return (
     <div className="min-h-screen h-full flex flex-col gap-10">
-      <Navbar />
+      <Navbar muted={muted} />
       <div
         id="blog"
         className="flex-grow h-full flex flex-col items-center gap-10 w-full max-w-full  bg-black text-white px-5 lg:px-20 pb-10  pt-32"
@@ -63,7 +63,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

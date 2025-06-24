@@ -12,16 +12,20 @@ import Home2 from "../components/Homepage/Home2";
 import Home3 from "../components/Homepage/Home3";
 import Home4 from "../components/Homepage/Home4";
 import Home5 from "../components/Homepage/Home5";
+import Button from "../components/Atoms/Button";
 const Home = ({ muted }) => {
 
   const Data = [< Home1 value={muted} />, < Home2 />, < Home3 />, < Home4 />, <Home5 />]
   return (
     <div className=' w-full h-full overflow-x-clip '>
+
+
       {Data?.map((data: any, index) => (
         <div key={index} className='  sticky top-0    w-screen h-[300vh] bg-white   '>
           <div className='  sticky top-0  w-screen h-screen  flex items-center justify-center  '>
             {data}
           </div>
+
         </div>
       ))}
     </div >

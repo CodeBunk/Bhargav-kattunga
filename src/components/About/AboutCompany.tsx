@@ -238,9 +238,10 @@ const AboutCompany = () => {
 
     return (
         <div className=' md:px-10 px-4 max-w-7xl w-full mx-auto ' >
-            <div className=' flex gap-5 items-center  pb-5 '>
+            <div className=' flex md:gap-5 gap-4 overflow-scroll items-center text-sm  pb-3 '>
+
                 {Data?.map((data: any, index) =>
-                    <div onClick={() => setSelected(index)} className={` ${Selected == index ? " text-black " : "opacity-50 "}  cursor-pointer `}>
+                    <div onClick={() => setSelected(index)} className={` ${Selected == index ? " text-black " : "opacity-50 "}  whitespace-nowrap  cursor-pointer `}>
                         {data?.name}
                     </div>)}
             </div>

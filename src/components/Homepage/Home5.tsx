@@ -2,13 +2,14 @@ import React from 'react'
 import Button from '../Atoms/Button'
 import Footer from '../Footer'
 import { useNavigate } from 'react-router'
+import image from "../../../public/Hero/hero5.png"
 
 const Home5 = () => {
   const location = useNavigate()
   return (
-    <div className=' flex flex-col pt-20  gap-10 items-center'>
+    <div className=' flex flex-col pt-10  gap-10 items-center'>
       <div>
-        <svg width="476" height="374" viewBox="0 0 476 374" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* <svg width="476" height="374" viewBox="0 0 476 374" fill="none" xmlns="http://www.w3.org/2000/svg">
           <mask id="mask0_4076_3946" className="mask-type:alpha" maskUnits="userSpaceOnUse" x="108" y="0" width="221" height="221">
             <rect x="108" width="221" height="221" fill="#D9D9D9" />
           </mask>
@@ -48,7 +49,13 @@ const Home5 = () => {
           <path d="M436.05 217.585L428.234 226.484L416.436 216.066C417.878 215.399 423.485 207.575 424.266 207.561L436.05 217.585ZM426.412 216.316C428.474 213.305 423.871 209.364 421.35 212.695C418.83 216.025 424.175 219.583 426.412 216.316ZM427.527 216.29C424.368 217.624 426.221 222.852 429.579 222.041C433.756 221.036 431.882 214.448 427.527 216.29Z" fill="white" />
           <path d="M427.527 216.29C431.882 214.448 433.756 221.036 429.579 222.041C426.231 222.85 424.378 217.622 427.527 216.29Z" fill="black" />
           <path d="M426.412 216.315C424.175 219.583 418.854 215.99 421.35 212.695C423.847 209.399 428.474 213.305 426.412 216.315Z" fill="black" />
-        </svg>
+        </svg> */}
+        <div className=' h-[40vh]'>
+
+          <img src={image} alt="" className=' h-full w-full object-contain' />
+
+        </div>
+
 
       </div>
       <div className=' space-y-3'>
@@ -66,7 +73,7 @@ const Home5 = () => {
       <div className=' ledt-0 w-full  absolute bottom-0'>
         <Footer />
       </div>
-    </div>
+    </div >
   )
 }
 

@@ -10,7 +10,8 @@ const AboutThings = () => {
         title: "Community is key",
         image: Community,
         subtitle: "I actively support and uplift budding designers, believing that design knowledge grows when it's shared. From mentoring on ADPList to volunteering for events, I stay involved to learn, share, and give back to the creative ecosystem.",
-        namaste: true
+        namaste: true,
+        link: "https://adplist.org/mentors/bhargav-sai-ram-kattunga"
     },
     {
         id: 2,

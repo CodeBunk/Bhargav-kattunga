@@ -40,24 +40,25 @@ const DesignSection = () => {
             <div className=' text-2xl text-center '>
                 Design Talks Around
             </div>
-            <div className=' pb-3 text-sm md:w-3/4  text-center mx-auto '>
+            <div className=' pb-7 text-sm md:w-3/4  text-center mx-auto '>
                 These are the kinda conversations I have ...
             </div>
             <div className=' grid grid-cols-4 gap-2 items-center '>
 
                 {Data?.map((data: any) =>
-                    <div onClick={() => (setSelected(data?.id - 1))} className={` ${Selected == data?.id - 1 ? " bg-black  " : " bg-[#D9D9D9] "}    w-full h-2 rounded-full cursor-pointer `}>
-                    </div>
+                    <button onClick={() => (setSelected(data?.id - 1))} className={` ${Selected == data?.id - 1 ? " bg-black  " : " bg-[#D9D9D9] "}    w-full h-2 rounded-full cursor-pointer `}>
+                    </button>
                 )}
             </div>
-            <div className=' pt-5 space-y-1 relative ' >
+            <div className=' pt-2 space-y-1 relative ' >
                 <img src={Data[Selected]?.image} alt="" className='relative w-full  rounded-xl h-full   object-contain' />
                 <div className='absolute bottom-4 left-7 flex gap-2 '>
 
-                    <div className='  cursor-pointer w-10 h-10  rounded-full ' onClick={() => Selected > 0 ? setSelected(Selected - 1) : setSelected(Data.length - 1)}>
-                    </div>
-                    <div className='  cursor-pointer  w-10 h-10  rounded-full  ' onClick={() => Selected < Data.length - 1 ? setSelected(Selected + 1) : setSelected(0)}>
-                    </div>
+                    <button className='  cursor-pointer w-10 h-10  rounded-full ' onClick={() => Selected > 0 ? setSelected(Selected - 1) : setSelected(Data.length - 1)}>
+
+                    </button>
+                    <button className='  cursor-pointer  w-10 h-10  rounded-full  ' onClick={() => Selected < Data.length - 1 ? setSelected(Selected + 1) : setSelected(0)}>
+                    </button>
                 </div>
 
             </div >

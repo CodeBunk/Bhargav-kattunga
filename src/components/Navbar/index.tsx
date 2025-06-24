@@ -8,6 +8,8 @@ import { Menu, X } from "lucide-react";
 import Curated from "../../../public/navbar/curated.gif"
 import archives from "../../../public/navbar/archives.gif"
 import defaultGIF from "../../../public/navbar/default.gif"
+import useClickSound from "../../Pages/sound";
+import sound from "../../../public/Hero/Sound.mp3"
 const NavbarData = [
   { name: "Home", URL: "/" },
   { name: "About", URL: "/about" },
@@ -35,10 +37,10 @@ const NavbarData = [
 
 ];
 
-const Navbar = () => {
+const Navbar = ({ muted }) => {
   const location = useNavigate();
 
-
+  const playClickSound = useClickSound(sound, muted);
   const [projects, setprojects] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
@@ -77,6 +79,7 @@ const Navbar = () => {
         alt=""
         className="md:h-16 h-10 hover:scale-105  rounded-xl  md:hidden transition-all duration-300 cursor-pointer "
         onClick={() => (
+          // playClickSound(),
           location("/"),
           window.scrollTo({
             top: 0,
@@ -86,6 +89,7 @@ const Navbar = () => {
         )}
       />
       <div onClick={() => (
+        // playClickSound(),
         location("/"),
         window.scrollTo({
           top: 0,
@@ -115,8 +119,9 @@ const Navbar = () => {
                 <div >
                   <Button
                     variant="text"
-
-                    onClick={() => setprojects(!projects)}
+                    onClick={() =>
+                      // (playClickSound(),
+                      setprojects(!projects)}
                     className={`" -h !w-auto !py-1 !px-2.5 border-none  flex-nowrap flex items-center gap-1 ${currentLocation?.pathname == props.URL || currentLocation?.pathname == "/curated" || currentLocation?.pathname == "/archives" ? " !bg-gray  !text-black  " : " "}`}
                   // className=" clear-start border-2 border-transparent transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:border-white rounded-full py-2 px-3 "
                   >
@@ -133,7 +138,9 @@ const Navbar = () => {
                   <img src={gif} alt="" className=" col-span-2 aspect-square h-full object-cover rounded-lg" />
                   <div className=" col-span-3 flex flex-col gap-1">
                     {props.subcat.map((subcat: any) => (
-                      <div className=" flex flex-col gap-1 items- hover:bg-bgmuted p-2   rounded-md font-manrope cursor-pointer" onMouseEnter={() => setGif(subcat.gif)} onMouseLeave={() => setGif(props.gif)} onClick={() => location(subcat.URL)}>
+                      // playClickSound(),
+                      <div className=" flex flex-col gap-1 items- hover:bg-bgmuted p-2   rounded-md font-manrope cursor-pointer" onMouseEnter={() => setGif(subcat.gif)} onMouseLeave={() => setGif(props.gif)} onClick={() => (playClickSound(),
+                        location(subcat.URL))}>
                         <p className="font-poppin text-left font-medium  text-sm select-none"> {subcat.name} </p>
                         <p className="font-poppin text-left text-sm text-subtitle  select-none"> {subcat.subtitle} </p>
                       </div>
@@ -144,7 +151,7 @@ const Navbar = () => {
             ) :
               <Button
                 variant="text"
-                onClick={() => location(props.URL)}
+                onClick={() => (location(props.URL))}
                 className={`" !w-auto !py-1 !px-2.5 border-none  ${currentLocation?.pathname == props.URL ? " !bg-gray  !text-black  " : " "}`}
               // className=" clear-start border-2 border-transparent transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:border-white rounded-full py-2 px-3 "
               >
@@ -241,7 +248,7 @@ const Navbar = () => {
                 <Button
                   variant="text"
                   className="!w-full flex  gap-2  items-center !py-2 !px-0"
-                  onClick={() => setMobileProjectsOpen(old => !old)}
+                  onClick={() => (setMobileProjectsOpen(old => !old))}
                 >
                   <span className=" text-center">{item.name}</span>
                   <span
@@ -288,6 +295,7 @@ const Navbar = () => {
                 variant="text"
                 className="!w-full text-left !py-2 !px-0"
                 onClick={() => {
+                  // playClickSound(),
                   location(item.URL);
                   setIsMobileMenuOpen(false);
                 }}
