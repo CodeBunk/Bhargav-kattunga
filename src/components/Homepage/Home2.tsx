@@ -28,7 +28,7 @@ const Home2 = () => {
       </div>
       <div className=' flex flex-col text-center gap-4   '>
         <div className=' grid grid-cols-2   gap-2 '>
-          <Button onClick={() => location("/curated")} className='  ' variant="secondary">Projects</Button>
+          <Button onClick={() => (sessionStorage.setItem("curatedScrollPos", "0"), location("/curated"))} className='  ' variant="secondary">Projects</Button>
           <Button onClick={() => location("/about")} className=' ' variant="primary">My Background</Button>
         </div>
         <div className=' flex flex-col text-center '>
@@ -40,7 +40,7 @@ const Home2 = () => {
 
 
       </div>
-    </div>
+    </div >
   )
 }
 

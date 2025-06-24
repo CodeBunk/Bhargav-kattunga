@@ -63,7 +63,6 @@ const Curated = () => {
   const handleNavigate = (link: string) => {
     if (link) {
       sessionStorage.setItem(STORAGE_KEY, window.scrollY.toString());
-
       navigate(link);
     }
   };

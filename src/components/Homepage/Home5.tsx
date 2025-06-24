@@ -63,11 +63,11 @@ const Home5 = () => {
           So, how do I contribute? Beautiful UI? Nah. <br /> It's about interactions & strategies that <br /> push things further.
         </div>
         <div className=' flex flex-col items-center text-center gap-4   '>
-          <Button onClick={() => location("/curated")} className=' w-32  ' variant="secondary">My Work</Button>
-          <div className=' flex flex-col text-center  leading-none'>
+          <Button onClick={() => (sessionStorage.setItem("curatedScrollPos", "0"), location("/curated"))} className=' w-32  ' variant="secondary">My Work</Button>
+          {/* <div className=' flex flex-col text-center  leading-none'>
             <span className=' text-gray1   '> So you've noticed that I'm standing already </span>
             More about me
-          </div>
+          </div> */}
         </div>
       </div>
       <div className=' ledt-0 w-full  absolute bottom-0'>

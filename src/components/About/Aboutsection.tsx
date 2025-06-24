@@ -60,7 +60,7 @@ const Aboutsection = () => {
     ]
     return (
         <div className=' px-10 max-w-7xl w-full mx-auto pb-10 border-b border-gray '>
-            <div className=' flex md:gap-5 gap-4 overflow-scroll items-center text-sm  pb-3 '>
+            <div className=' flex md:gap-5 gap-4 max-sm:overflow-scroll items-center text-sm  pb-3 '>
                 {Data?.map((data: any, index) =>
                     <div onClick={() => setSelected(index)} className={` ${Selected == index ? " text-black " : "opacity-50 "} cursor-pointer whitespace-nowrap`}>
                         {data?.name}
