@@ -156,7 +156,7 @@ const Archives = () => {
                 "Developed and hosted a personal website to present work across travel, branding, systems, and design explorations.",
             date: "01/2024",
             tags: ["portfolio", "webdesign", "personalbrand"],
-            link: "https://Bhargavkattunga.in/Portfolio",
+            link: "/Portfolio",
         },
         // {
         //     id: 18,
