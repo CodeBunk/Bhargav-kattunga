@@ -2,7 +2,7 @@
 
 import { useEffect, useLayoutEffect, useState } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Link,
   Route,
@@ -75,7 +75,8 @@ function App() {
 
   return (
 
-    <BrowserRouter>
+    // <BrowserRouter>
+    <Router>
       <ScrollToTop />
       <Navbar muted={muted} />
       <Routes>
@@ -103,7 +104,8 @@ function App() {
         {/* </Route> */}
       </Routes>
       <MuteButton handleChe={() => handle()} value={muted} />
-    </BrowserRouter >
+    </Router>
+    // </BrowserRouter >
 
   );
 }
