@@ -25,7 +25,6 @@ const AboutHobbies = () => {
         id: 3,
         title: "Competitive Gaming",
         icon: "🎮",
-
         subtitle: "I steam off with strategy, skill, and a little bit of rage."
     },
     {
@@ -51,7 +50,7 @@ const AboutHobbies = () => {
 
                 <div className=' flex flex-col w-1/2 mx-auto gap-5 '>
                     {Data?.map((data: any) =>
-                        <div className=' flex  items-center select-none  gap-3 bg-dark py-4 px-3 rounded cursor-pointer hover:shadow  w-full ' onClick={() => window.open(data?.link, "_blank")}>
+                        <div className=' flex  items-center select-none  gap-3 bg-dark py-4 px-3 rounded cursor-pointer hover:shadow  w-full ' onClick={() => data?.link ? window.open(data?.link, "_blank") : null}>
                             <div >
                                 {data?.icon}
                             </div>
