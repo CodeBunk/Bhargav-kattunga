@@ -17,6 +17,8 @@ import image14 from "../../public/Dohabank/14.png";
 import image15 from "../../public/Dohabank/15.png";
 import image16 from "../../public/Dohabank/16.png";
 import image17 from "../../public/Dohabank/17.png";
+import Friends from "../../public/Dohabank/friendsgif.gif";
+import Bean from "../../public/Dohabank/bean.gif";
 import Button from '../components/Atoms/Button';
 
 
@@ -40,12 +42,14 @@ const DohaBank: React.FC = () => {
         return (
             <div className="min-h-[80vh] h-full flex flex-col items-center justify-center  from-[#0f172a] to-[#1e293b]">
                 <div className="bg-white/10 border border-white/20 rounded-xl px-8 py-10 shadow-lg flex flex-col items-center max-w-md">
-                    <svg width="48" height="48" fill="none" className="mb-4 text-red" viewBox="0 0 24 24">
+                    {/* <svg width="48" height="48" fill="none" className="mb-4 text-red" viewBox="0 0 24 24">
                         <circle cx="12" cy="12" r="10" stroke="red" opacity="50%" strokeWidth="2" fill="white" />
                         <path d="M12 8v4" stroke="red" strokeWidth="2" opacity="50%" strokeLinecap="round" />
                         <circle cx="12" cy="16" r="1" fill="red" opacity="50%" />
                     </svg>
-                    <h2 className="text-2xl font-semibold text-black mb-2">Access Restricted</h2>
+                    <h2 className="text-2xl font-semibold text-black mb-2">Access Restricted</h2> */}
+
+                    <img src={Friends} alt="" />
                     <p className="text-base text-blue-100 mb-4">
                         This page is password protected.<br />
                         Please <span className="font-medium text-sky-300">contact me</span> to request access.
@@ -64,8 +68,11 @@ const DohaBank: React.FC = () => {
     // not yet submitted → show password form
     if (authorized === null) {
         return (
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: 100 }} className=' min-h-[80vh] h-full'>
+            <div className='flex items-center justify-center flex-col min-h-[80vh] h-full'>
+                <img src={Bean} alt="" className=' rounded pb-10' />
+
                 <form onSubmit={handleSubmit} className=' flex flex-col gap-4  text-center'>
+
                     <label>
                         Enter password
 
@@ -77,7 +84,7 @@ const DohaBank: React.FC = () => {
                         onChange={e => setInput(e.target.value)}
                         autoFocus
                     />
-                    <Button type="submit" >Go</Button>
+                    <Button variant='primary' type="submit" >Go</Button>
                 </form>
             </div>
         )
