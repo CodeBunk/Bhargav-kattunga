@@ -28,6 +28,7 @@ import useClickSound from "./Pages/sound";
 import sound from "../public/Hero/Sound.mp3"
 import MuteButton from "./components/muteButton";
 import MyPortfolio2024 from "./Pages/MyPortfolio2024";
+import DohaBank from "./Pages/DohaBank";
 
 
 
@@ -91,8 +92,9 @@ function App() {
         <Route path="/project" element={<Wishtronics />} />
         <Route path="/archives" element={<Archives />} />
         <Route path="/Portfolio" element={<MyPortfolio2024 />} />
-        <Route element={<CuratedLayout />} >
 
+        <Route element={<CuratedLayout />} >
+          <Route path="/curated/Dohabank" element={<DohaBank />} />
           <Route path="/curated/kingzqueenz" element={<KingsQueen />} />
           <Route path="/curated/oneImmersive" element={<OneImmersive />} />
           <Route path="/curated/travana" element={<Travia />} />

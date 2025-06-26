@@ -30,8 +30,7 @@ const Curated = () => {
       timeline: "06/2024-12/2024",
       subtitle:
         "Leading Doha Bank's corporate app design, while focusing on user engagement and enhancing retail banking system efficiency.",
-      // link: "/curated/Dohabank",
-      link: "",
+      link: "/curated/Dohabank",
     },
     {
       image: lCS,
