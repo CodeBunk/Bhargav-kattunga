@@ -69,7 +69,21 @@ const Navbar = ({ muted }) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [projects]);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const percent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      setScrollProgress(percent);
+    };
+    +
+      // (you already had an empty useEffect here)
+      window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div
@@ -322,7 +336,13 @@ const Navbar = ({ muted }) => {
       </div>
 
 
-
+      <div className=" z-[100] fixed w-screen h-1 md:top-16 top-[73px] left-0 ">
+        {/* <div className={`bg-black h-full  w-[50%] rounded`}></div> */}
+        <div
+          className="bg-black/50 h-full rounded"
+          style={{ width: `${scrollProgress}%` }}
+        />
+      </div>
     </div>
   );
 };

@@ -16,32 +16,10 @@ import Button from "../components/Atoms/Button";
 const Home = ({ muted }) => {
 
   const Data = [< Home1 value={muted} />, < Home2 />, < Home3 />, < Home4 />, <Home5 />]
-  console.log(window.scrollY, "screen")
 
-  const [scrollProgress, setScrollProgress] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const docHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
-      const percent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-      setScrollProgress(percent);
-    };
-    +
-      // (you already had an empty useEffect here)
-      window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <div id="home" className=' w-full h-full overflow-x-clip '>
-      <div className=" z-[100] fixed w-screen h-1 md:top-16 top-[73px] left-0 ">
-        {/* <div className={`bg-black h-full  w-[50%] rounded`}></div> */}
-        <div
-          className="bg-black/50 h-full rounded"
-          style={{ width: `${scrollProgress}%` }}
-        />
-      </div>
+
 
       {Data?.map((data: any, index) => (
         <div key={index} className='  sticky top-0    w-screen h-[150vh] bg-white   '>
