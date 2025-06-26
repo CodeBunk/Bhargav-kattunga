@@ -78,12 +78,14 @@ const AboutCompany = () => {
                 {
                     image: acceltronLogo,
                     title: "Acceltron Technologies / 05/2021-09/2021 / Hyderabad, India",
+                    link: "https://www.behance.net/gallery/156976797/KingzQueenZ-Rummy",
                     subtitle:
                         "Built an interactive, voice-led conversational MVP that improved onboarding and increased user retention by 38%; ran workshops on micro-interactions to boost accessibility and engagement.",
                 },
                 {
                     image: wishtronicsLogo,
                     title: "Wishtronics Technologies / 07/2019-09/2019 / Karimnagar, India",
+                    link: "https://www.behance.net/gallery/111908323/Wishtronics-Branding",
                     subtitle:
                         "Developed a comprehensive branding strategy for a STEAM-focused ed-tech product; crafted product visuals, print materials, and outreach content that resulted in 3 institutional partnerships.",
                 },

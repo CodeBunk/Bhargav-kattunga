@@ -21,7 +21,7 @@ const Archives = () => {
                 "Designed a case study focused on group travel discovery and itinerary planning. Prioritized shared tools and real-time sync to enhance collaborative travel experiences.",
             date: "10/2022 - 12/2022",
             tags: ["travel", "casestudy", "ux", "ui"],
-            link: "travana.io",
+            link: "https://travana.io/",
         },
         {
             id: 3,
