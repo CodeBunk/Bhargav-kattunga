@@ -96,7 +96,7 @@ const Navbar = ({ muted }) => {
           left: 0,
           behavior: "smooth",
         })
-      )} className=" md:block hidden">
+      )} className=" md:block hidden cursor-pointer">
         Bhargav Sai Ram Kattunga
       </div>
       {/* Mobile Hamburger */}
