@@ -75,7 +75,7 @@ const Curated = () => {
             className="sticky top-0 w-screen h-[300vh] bg-white"
           >
             <div className="sticky top-0 w-screen h-screen flex items-center justify-center">
-              <div
+              <button
                 className="w-3/4 mx-auto flex flex-col pt-20 cursor-pointer"
                 onClick={() => handleNavigate(data.link)}
               >
@@ -91,7 +91,7 @@ const Curated = () => {
                 <p className="leading-none font-medium text-left w-1/2 text-sm text-sub">
                   {data.subtitle}
                 </p>
-              </div>
+              </button>
             </div>
           </div>
         ))}
