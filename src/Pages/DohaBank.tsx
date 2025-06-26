@@ -51,7 +51,7 @@ const DohaBank: React.FC = () => {
                         Please <span className="font-medium text-sky-300">contact me</span> to request access.
                     </p>
                     <a
-                        href="mailto:hello@bixeel.com?subject=Request%20for%20Doha%20Bank%20Password"
+                        href="mailto:bhargav.kattunga@gmail.com?subject=Request%20for%20Doha%20Bank%20Password"
                         className="inline-block bg-sky-500 hover:bg-sky-600 text-black font-semibold px-5 py-2 rounded transition"
                     >
                         Contact Me
