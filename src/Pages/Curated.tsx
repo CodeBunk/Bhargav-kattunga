@@ -72,7 +72,7 @@ const Curated = () => {
         {Data.map((data, idx) => (
           <div
             key={idx}
-            className="sticky top-0 w-screen h-[300vh] bg-white"
+            className="sticky top-0 w-screen h-[150vh] bg-white"
           >
             <div className="sticky top-0 w-screen h-screen flex items-center justify-center">
               <button
